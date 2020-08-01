@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caperucita Roja</title>
+    <link rel="stylesheet" href="caperucita-roja.css">
+</head>
+<body>
+    <!-- scroll="no" style="overflow: hidden" -dentro del body para cambiar pag con botones--->
+    <main><!-- aqui la grilla...cada article ocupa un espacio-->
+        <!-- titulo del libro -->
+        <article id="pag-1-1">
+            <div class="cont">
+                <div class="libro">
+                    <figure class="portada-frente">
+                        <div class="deco">
+                            <h2>Caperucita <br> Roja</h2>
+                        </div>  
+                    </figure>   
+                    <figure class="portada-atras"></figure>          
+                </div>
+             <div  class="pagina">
+                <p><span style="font-size: 45px ; color: #D01A0B ;">B</span>ienvenido a nuestro proyecto. Esta es una histroria interactiva basada en el cuento infantil "Caperucita Roja" en este vas a encontrar 3 finales alternativos de la historia y todo dependerá enteramente de tus decisiones, ahora tu eres el protagonista<br><br>Cada final va a variar dependiendo de los caminos o acciones que decidas hacer ¿te comerá el lobo?, ¿saldras victorioso? o quien sabe, quizas termines siendo el villano.Si crees que estas listo para empezar haz click en el boton de abajo y veamos a donde te llevan tus elecciones.
+                </p>
+                <a href="#escena1">Empieza tu Historia</a>
+             </div> 
+            </div>
+        </article>
+
+        <!-- empieza la historia -->
+        <article id="pag-1-2">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- el libro se inclina -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont inclinacion"></div><!--hojas del libro-->
+                <div class="cuadrado-cont2 cuadrado-cont inclinacion"></div>
+                <div class="cuadrado-cont1 cuadrado-cont inclinacion"></div>
+                <div class="cuadrado inclinacion"></div>
+                <div class="cuadrado1 cuadrado inclinacion"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes">
+                <!-- <img src="img/cap.jpeg" alt="cap" class="cap"> -->
+            </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="#pag-1-1" class="pagAtras">Atras</a>
+                <a href="#pag-2-2" class="pagSiguiente">Siguiente</a>
+            </div>
+            <div class="camino-alternativo">
+                <a href="#pag-1-3">img-flores</a>
+            </div>
+        </article>
+
+        <article id="pag-1-3">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- parte del libro - no se modifica -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div>
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado"></div>
+                <div class="cuadrado1 cuadrado"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes"> </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="#pag-1-2" class="pagAtras">Atras</a>
+                <a href="#pag-2-3" class="pagSiguiente">Siguiente</a>
+            </div>
+            <!--boton para opciones de camino...borrar si no hay nada-->
+            <!-- <div class="opcion-respt">
+                <a href="#">opcion respuesta A</a>
+                <a href="#">opcion respuesta B</a>
+                <a href="#">opcion respuesta C</a>
+                <p></p>
+            </div> -->
+        </article>
+
+        <article id="pag-2-1">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- parte del libro - no se modifica -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div>
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado"></div>
+                <div class="cuadrado1 cuadrado"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes"> </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="#pag-2-2" class="pagAtras">Atras</a>
+                <a href="#cuadrado1" class="pagSiguiente">Siguiente</a>
+            </div>
+        </article>
+
+        <article id="pag-2-2">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- parte del libro - no se modifica -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div>
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado"></div>
+                <div class="cuadrado1 cuadrado"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes"> </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="#pag-1-2" class="pagAtras">Atras</a>
+                <p></p>
+            </div>
+            <!--boton para opciones de camino...borrar si no hay nada-->
+            <div class="opcion-respt">
+                <a href="#pag-2-1">camino lago</a>
+                <a href="#pag-3-2">camino corto</a>
+            </div>
+        </article>
+
+        <article id="pag-2-3">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- parte del libro - no se modifica -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div>
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado"></div>
+                <div class="cuadrado1 cuadrado"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes"> </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="#pag-1-3" class="pagAtras">Atras</a>
+                <a href="#pag-3-3" class="pagSiguiente">Siguiente</a>
+            </div>
+        </article>
+
+        <article id="pag-3-1">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- parte del libro - no se modifica -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div>
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado"></div>
+                <div class="cuadrado" id="cuadrado1"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes"> </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="#pag-2-1" class="pagAtras">Atras</a>
+                <a href="#pag-4-1" class="pagSiguiente">Siguiente</a>
+            </div>
+        </article>
+
+        <article id="pag-3-2">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- parte del libro - no se modifica -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div>
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado"></div>
+                <div class="cuadrado1 cuadrado"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes"> </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="#pag-2-2" class="pagAtras">Atras</a>
+                <a href="#pag-4-2" class="pagSiguiente">Siguiente</a>
+            </div>
+        </article>
+
+        <article id="pag-3-3">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- parte del libro - no se modifica -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div>
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado"></div>
+                <div class="cuadrado1 cuadrado"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes"> </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="#pag-2-3" class="pagAtras">Atras</a>
+                <a href="#pag-4-3" class="pagSiguiente">Siguiente</a>
+            </div>
+        </article>
+
+        <article id="pag-4-1">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- parte del libro - no se modifica -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div>
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado"></div>
+                <div class="cuadrado1 cuadrado"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes"> </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="#pag-3-1" class="pagAtras">Atras</a>
+                <p></p>
+            </div>
+        </article>
+
+        <article id="pag-4-2">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- parte del libro - no se modifica -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div>
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado"></div>
+                <div class="cuadrado1 cuadrado"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes"> </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="#pag-3-2" class="pagAtras">Atras</a>
+                <a href="#pag-5-2" class="pagSiguiente">Siguiente</a>
+            </div>
+        </article>
+
+        <article id="pag-4-3">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- parte del libro - no se modifica -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div>
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado"></div>
+                <div class="cuadrado1 cuadrado"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes"> </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="#pag-3-3" class="pagAtras">Atras</a>
+                <a href="#pag-5-3" class="pagSiguiente">Siguiente</a>
+            </div>
+        </article>
+
+        <article id="pag-5-1">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- parte del libro - no se modifica -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div>
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado"></div>
+                <div class="cuadrado1 cuadrado"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes"> </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="pag-#5-2" class="pagAtras">Atras</a>
+                <p></p>
+            </div>
+        </article>
+
+        <article id="pag-5-2">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- parte del libro - no se modifica -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div>
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado"></div>
+                <div class="cuadrado1 cuadrado"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes"> </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="#pag-4-2" class="pagAtras">Atras</a>
+                <a href="#pag-5-1" class="pagSiguiente">Siguiente</a>
+            </div>
+        </article>
+
+        <article id="pag-5-3">
+            <div class="tit-libro">
+                <p>explicacion de la historia</p>
+            </div>
+            <!-- parte del libro - no se modifica -->
+            <div class="tam-libro" >
+                <div class="cuadrado-cont3 cuadrado-cont"></div>
+                <div class="cuadrado-cont2 cuadrado-cont"></div>
+                <div class="cuadrado-cont1 cuadrado-cont"></div>
+                <div class="cuadrado"></div>
+                <div class="cuadrado1 cuadrado"></div>
+            </div>
+            <!-- ingreso de imganenes -->
+            <div class="imagenes"> </div>
+            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            <div class="nav">
+                <a href="#pag-4-3" class="pagAtras">Atras</a>
+                <p></p>
+            </div>
+        </article>
+
+    </main>
+</body>
+</html>

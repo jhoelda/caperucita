@@ -1,0 +1,274 @@
+/* ESTILOS GENERALES */
+*{
+    margin: 0;
+}
+main{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(5,1fr);
+}
+/* article un componente de la grilla general */
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    perspective: 1000px;
+    background-color: #D0F9F2 ;
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* estilos de la portada */
+.cont{
+    width: 430px;
+    height:640px;
+    position:absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    background-color: saddlebrown;
+    border-radius: 0 20px 20px 0;
+    perspective: 2000px;
+    box-shadow: 3px 4px 7px black;
+ }
+ .libro {
+    width: 440px;
+    height:640px;
+    position:absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    border-radius: 0px 20px 20px 0;
+    background-color: saddlebrown;
+    transform: rotateY(0);
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: all 2s  ease-in;
+    border-left: 20px solid #362401 ;
+    box-shadow: 3px 4px 7px black;
+ }
+ .deco{
+    border:1px solid yellow;
+    border-radius: 0 17px 17px 0;
+    height: 600px;
+    width: 400px;
+    margin: 20px;
+    color:#EB1200;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+ }
+
+ figure{
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100% ;
+    height: 100% ;
+    backface-visibility: hidden;
+ }
+ .cont:hover .libro{
+    transform: rotateY(-180deg);
+ }
+ .pagina{
+    background-color:#FFEFCE ;
+    border-radius: 17px;
+    height: 600px;
+    width: 390px;
+    margin: 20px; 
+    border-radius: 0 20px 20px 0;
+    box-shadow: 3px 4px 5px black;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+ }
+.pagina>p, .pagina>img{
+    text-align: justify;
+    margin: 20px;
+}
+  .pagina>a{
+    display: block;
+    background-color:#EB1200;
+    margin:13px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 4px; 
+    font-family: 'Dancing Script', cursive;
+     color: white; 
+    text-decoration: none;
+}
+.pagina>a:hover{
+    background-color: yellow;
+    color: black;
+}
+section>a{
+    background-color: #EB1200;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+}
+
+
+/* titulo del libro - en la perte superior de la pag*/
+.tit-libro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 1100px;
+    height: 35vh;
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+
+/* tamaño del libro en la grilla - al final borrar el border*/
+.tam-libro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* ESTILOS DE LA PORTADA DEL LIBRO */
+.cuadrado-port{
+    width: 50%;
+    height: 500px;
+    background-image: linear-gradient(#1dc434f6 ,#aeca5f);
+    background-color: rgb(252, 219, 176);
+    border: 1px solid rgb(148, 33, 5);
+    border-radius: 20px ;
+}
+
+/* ESTILOS DE inclinacion DEL LIBRO */
+.cuadrado-cont{
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    background-color: rgba(222, 184, 135);
+    border: 3px solid rgba(138, 78, 0, 0.5);
+    border-radius: 20px;
+    box-shadow: 10px 30px rgba(0, 0, 0, 0.295);
+}
+.cuadrado-cont1{
+    transform: rotateX(60deg) translateZ(0px);
+
+}
+.cuadrado-cont2{
+    transform: rotateX(60deg) translateZ(-20px);
+}
+.cuadrado-cont3{
+    transform: rotateX(60deg) translateZ(-40px);
+    border: 15px solid rgb(148, 33, 5);
+}
+.inclinacion{
+    transition: all 5s;
+}
+
+/* estilo del cuadrado q cambia de pagina */
+.cuadrado{
+    width: 50%;
+    height: 600px;
+    background-image: linear-gradient(#1dc434f6 ,#aeca5f);
+    border: 1px solid blue;
+    transform: rotatex(60deg);
+    border-radius: 20px;
+}
+
+/* estilo cambiar pagina */
+@keyframes cuadrado1{
+    from{
+        transform: rotatex(60deg);
+    }
+    to{
+        transform: rotatex(60deg) rotateY(-180deg);
+    }
+}
+.cuadrado1{
+    animation-name: cuadrado1;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease;
+    transform-origin: left;
+}  
+#cuadrado1:target{
+    animation-name: cuadrado1;
+    animation-duration: 5s;
+    /* animation-iteration-count: infinite; */
+    transform-origin: left;
+} 
+
+/* estilo boton pag siguiente y anterior*/
+.nav{
+    position: absolute;
+    top: 1em;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+.nav>a{
+    width: 10em;
+    height: 2em;
+    margin: 0 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+/* estilo boton de deciciones */
+.opcion-respt{
+    position: absolute;
+    right: 0;
+    top: 5em;
+    height: calc(100vh - 5em);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.opcion-respt>a{
+    width: 10em;
+    height: 3em;
+    margin: 0 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.camino-alternativo{
+    z-index: 1;
+    position: absolute;
+    top: 30vh;
+}
+/* estilo de imagenes */
+/* todas la imagenes ubicadas con posicion absoluto, es mas facil */
+.imagenes{
+    position: absolute;
+    width: 1200px;
+    height: 80vh;
+    border: 2px solid yellow;
+}
+.cap{
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* cada animacion de pagina separenlo con un titulo */
