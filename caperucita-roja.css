@@ -2,6 +2,10 @@
 *{
     margin: 0;
 }
+a{
+    text-decoration: none;
+
+}
 main{
     display: grid;
     grid-template-columns:repeat(3,1fr);
@@ -17,7 +21,7 @@ article{
     height: 100vh;
     perspective: 1000px;
     background-color: #D0F9F2 ;
-    background-image: url(img/fondo.jpg);
+    background-image: url("img/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -272,3 +276,206 @@ section>a{
 }
 
 /* cada animacion de pagina separenlo con un titulo */
+/* pag-2-2 se encuentra con el lobo y eleccion camino corto o camino largo */
+
+#animacion-2-2{
+    /* position: absolute; */
+}
+#cap-2-2{
+    position: absolute;
+    z-index: 2;
+    width: 120px;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    background-size: contain;
+}
+#lobo-2-2{
+    position: absolute;
+    z-index: 3;
+    width: 200px;
+    height: 280px;
+    bottom: 0;
+    right: 0;
+    background-size: contain;
+}
+#arbusto2-2-2{
+    position: absolute;
+    z-index: 1;
+    width: 700px;
+    height: 100px;
+    left: 130px;
+    top: 45vh;
+}
+#arbolB-2-2{
+    position: absolute;
+    z-index: 2;
+    width: 450px;
+    bottom: 120px;
+    left: 50%;
+}
+#arbol2-2-2{
+    position: absolute;
+    z-index: 0;
+    width: 300px;
+    top: 50px;
+    left: 20%;
+}
+@keyframes caminata{
+    0%{
+        transform: translateX(0);
+        background-image: url("img/caminata1.png");
+    }
+    25%{
+        transform: translateX(100px) translateY(-20px);
+        background-image: url("img/caminata3.png");
+    }
+    50%{
+        transform: translateX(200px);
+        background-image: url("img/caminata1.png");
+    }
+    75%{
+        transform: translateX(300px) translateY(-20px);
+        background-image: url("img/caminata3.png");
+    }
+    100%{
+        transform: translateX(400px);
+        background-image: url("img/caperucita2.png");
+    }
+}
+.cap-2-2{
+    animation: caminata 6s linear 5s 1 normal forwards;
+}
+@keyframes loboAparece{
+    0%{
+        transform: translate(-150px,-100px) scale(.6);
+        background-image: url("img/lobo2.png");
+    }
+    25%{
+        transform: translate(-80px,-50px) scale(.8);
+        background-image: url("img/lobo2.png");
+    }
+    50%{
+        transform: translateX(-150px);
+        background-image: url("img/lobo1.png");
+    }
+    75%{
+        transform: translateX(-300px);
+        background-image: url("img/lobo1.png");
+    }
+    100%{
+        transform: translateX(-400px);
+        background-image: url("img/lobo1.png");
+    }
+}
+.lobo-2-2{
+    animation: loboAparece 5s linear 5s 1 normal forwards;
+}
+
+#cartel{
+    background-image: url("img/cartel2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    height: 200px;
+    bottom: 90px;
+    right: 30px;
+    background-size: cover;
+}
+.lightbox{
+    display: none;
+}
+.lightbox:target{
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* background-image: url("img/cartel2.png"); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+.lightbox .cartelbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    background-color: rgba(255, 255, 255, 0.363);
+    background-image: url("img/cartel2.png");
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    z-index: 4;
+}
+.lightbox .cartelbox a{
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    /* margin-top: 100px; */
+    width: 8em;
+    height: 3em;
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+#camLargo{
+    margin-top: 120px;
+    transform: rotate(9deg);
+}
+#camCorto{
+    margin-top: 60px;
+    transform: rotate(-10deg) translateX(30px);
+}
+.lightbox .close::after{
+    position: absolute;
+    right: calc(((100% - 600px) / 2) - 1em);
+    top: calc(((100% - 600px) / 2) - 1em);
+    width: 2em;
+    height: 2em;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EB1200;
+    color: white;
+    content: "x";
+    cursor: pointer;
+    border-radius: 50%;
+    border: .3em solid white;
+}
+.lightbox .close::before{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .6);
+    content: "";
+    cursor: default;
+}
+#casa-3-2{
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    width: 900px;
+}
+
+
+
+
+
+
+
+
+
+#casa{
+    background-image: url("img/casaInterior.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
