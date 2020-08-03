@@ -1,6 +1,7 @@
 /* ESTILOS GENERALES */
 *{
     margin: 0;
+    padding: 0;
 }
 a{
     text-decoration: none;
@@ -20,8 +21,13 @@ article{
     width: 100vw;
     height: 100vh;
     perspective: 1000px;
+<<<<<<< HEAD
+    background-color:#C3FFF7 ;
+    background-image: url(img/fondo.jpg);
+=======
     background-color: #D0F9F2 ;
     background-image: url("img/fondo.jpg");
+>>>>>>> 2bf512e346cc53e32f97c2cecfa3ff122f68ed05
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -137,7 +143,11 @@ section>a{
     height: 35vh;
     border-radius: 10px;
     border: 2px solid blue;
+<<<<<<< HEAD
     z-index: 3;
+=======
+    font-family: 'Dancing Script', cursive;
+>>>>>>> 931616affda3c82548c742b628cdf077c477ce5e
 }
 
 /* tamaño del libro en la grilla - al final borrar el border*/
@@ -275,27 +285,147 @@ section>a{
     position: absolute;
     bottom: 0;
 }
+/*ESTILOS ESCENA  YENNY Y LUZ 1*/
+img[alt="arb1"]{
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top:80px;
+    left:870px;
+}
+img[alt="arb2"]{
+     width: 250px;
+    height: 300px;
+    position: absolute;
+    top:30px;
+    left:800px;
+}
+img[alt="camino"]{
+    width: 400px;
+    height:200px;
+    position: absolute;
+    top: 250px;
+    left:600px; 
+}
+img[alt="casa-cap"]{
+     width: 350px;
+    height: 350px;
+    position: absolute;
+    top:90px;
+    left:150px;
+}
+img[alt="cam1"]{
+    height: 230px;
+    position: absolute;
+    top:350px;
+    left:150px; 
+}
+img[alt="flor"]{
+    position: absolute;
+    top: 420px;
+    left: 850px;
+    width: 300px;
 
+}
+img[alt="cartel"]{
+    position: absolute;
+    height: 160px;
+    top: 420px;
+    left: 650px;
+}
+img[alt="camino"]:hover,img[alt="flor"]:hover{
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+/*ESTILOS TIPICA ESCENA YENNY Y LUZ*/
+#pag-4-1{background-color:#252555;}
+
+img[alt="arbol"]{
+    position: absolute;
+    bottom: 50px;
+    left: 800px;
+    height: 410px;
+}
+img[alt="pasto"]{
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+    height: 90px;
+    width: 1200px;
+}
+img[alt="cabaña1"]{
+    position: absolute;
+    width: 900px;
+    height:450px;
+    top: 100px;
+    left: 140px;
+}
+img[alt="cap-asus"]{
+    position: absolute; 
+    width: 100px;
+    height: 160px;
+    top: 330px;
+    left:400px;
+}
+img[alt="cama"]{
+    position: absolute;
+    top: 330px;
+    left:680px;
+    width: 250px;
+    height: 170px;
+}
+img[alt="lobomalo"]{
+    position: absolute; 
+    width: 180px;
+    height: 270px;
+    top: 240px;
+    left:500px;
+}
+img[alt="arbusto2"]{
+    position: absolute;
+    top: 490px;
+    left: 0px;
+    width: 1200px;
+    height: 140px;
+    z-index: 2;
+}
+img[alt="arbusto3"]{
+   position: absolute;
+    top: 420px;
+    left: 60px;
+    width: 1100px;
+    height: 140px; 
+}
+
+<<<<<<< HEAD
+img[alt="nube1"]{
+    position: absolute;
+    top:0px;
+    left: -80px;
+}
+img[alt="nube3"]{
+    position: absolute;
+    top: 0px;
+    right: -60px;
+}
+
+img[alt="luna"]{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 100px;
+    height: 100px;
+
+}
+/* cada animacion de pagina separenlo con un titulo */
+
+
+/* ESTILOS ESCENAS MAGA Y JHOELDA */
 /* cada animacion de pagina separenlo con un titulo */
 /* pag-2-2 se encuentra con el lobo y eleccion camino corto o camino largo */
-#cap-2-2{
-    position: absolute;
-    z-index: 2;
-    width: 120px;
-    height: 200px;
-    bottom: 0;
-    left: 0;
-    background-size: contain;
-}
-#lobo-2-2{
-    position: absolute;
-    z-index: 3;
-    width: 200px;
-    height: 280px;
-    bottom: 0;
-    right: 0;
-    background-size: contain;
-}
+/* #animacion-2-2{
+    perspective: 500px;
+} */
 #arbusto2-2-2{
     position: absolute;
     z-index: 1;
@@ -325,14 +455,28 @@ section>a{
     animation: opacidad 1s linear 5s 1 normal forwards;
 }
 @keyframes opacidad{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
-@keyframes caminata{
+#cap-2-2{
+    position: absolute;
+    z-index: 2;
+    width: 120px;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+}
+#lobo-2-2{
+    position: absolute;
+    z-index: 3;
+    width: 200px;
+    height: 280px;
+    bottom: 0;
+    right: 0;
+    background-size: contain;
+}
+@keyframes caminataCaperucita{
     0%{
         transform: translateX(0);
         background-image: url("img/caminata1.png");
@@ -355,8 +499,9 @@ section>a{
     }
 }
 .cap-2-2{
-    animation: caminata 6s linear 5s 1 normal forwards;
+    animation: caminataCaperucita 6s linear 5s 1 normal forwards;
 }
+
 @keyframes loboAparece{
     0%{
         transform: translate(-150px,-100px) scale(.6);
@@ -606,3 +751,4 @@ section>a{
     background-repeat: no-repeat;
     background-size: contain;
 }
+>>>>>>> 2bf512e346cc53e32f97c2cecfa3ff122f68ed05
