@@ -22,7 +22,6 @@ article{
     height: 100vh;
     perspective: 1000px;
 <<<<<<< HEAD
-    background-color:#C3FFF7 ;
     background-image: url(img/fondo.jpg);
 =======
     background-color: #D0F9F2 ;
@@ -32,6 +31,14 @@ article{
     background-size: cover;
 }
 /* estilos de la portada */
+
+#pag-1-2,#pag-1-1{
+        background-color:#C3FFF7 ; 
+}
+#pag-2-1{
+    background-color: #FFC96C ;
+}
+
 .cont{
     width: 430px;
     height:640px;
@@ -286,12 +293,48 @@ section>a{
     bottom: 0;
 }
 /*ESTILOS ESCENA  YENNY Y LUZ 1*/
+#cap-camina{
+    position: absolute;
+    z-index: 2;
+    width: 120px;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+}
+@keyframes cap-camina{
+    0%{
+        transform: translateX(0);
+        background-image: url("img/caminata1.png");
+    }
+    25%{
+        transform: translateX(150px) translateY(-20px);
+        background-image: url("img/caminata3.png");
+    }
+    50%{
+        transform: translateX(250px);
+        background-image: url("img/caminata1.png");
+    }
+    75%{
+        transform: translateX(350px) translateY(-20px);
+        background-image: url("img/caminata3.png");
+    }
+    100%{
+        transform: translateX(450px);
+        background-image: url("img/caperucita2.png");
+    }
+}
+.cap-camina{
+    animation: cap-camina 8s linear 7s 1 normal forwards;
+}
 img[alt="arb1"]{
     width: 250px;
     height: 300px;
     position: absolute;
     top:80px;
     left:870px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
 }
 img[alt="arb2"]{
      width: 250px;
@@ -299,6 +342,8 @@ img[alt="arb2"]{
     position: absolute;
     top:30px;
     left:800px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
 }
 img[alt="camino"]{
     width: 400px;
@@ -306,6 +351,8 @@ img[alt="camino"]{
     position: absolute;
     top: 250px;
     left:600px; 
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
 }
 img[alt="casa-cap"]{
      width: 350px;
@@ -313,52 +360,48 @@ img[alt="casa-cap"]{
     position: absolute;
     top:90px;
     left:150px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
 }
 img[alt="cam1"]{
     height: 230px;
     position: absolute;
     top:350px;
     left:150px; 
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
 }
 img[alt="flor"]{
     position: absolute;
     top: 420px;
     left: 850px;
     width: 300px;
-
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
 }
 img[alt="cartel"]{
     position: absolute;
     height: 160px;
     top: 420px;
     left: 650px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
 }
 img[alt="camino"]:hover,img[alt="flor"]:hover{
     transform: scale(1.2);
     transition: 1.5s;
 }
-/*ESTILOS TIPICA ESCENA YENNY Y LUZ*/
+/*ESTILOS LOBO SE COME A CAPERUCITA YENNY Y LUZ*/
 #pag-4-1{background-color:#252555;}
 
-img[alt="arbol"]{
-    position: absolute;
-    bottom: 50px;
-    left: 800px;
-    height: 410px;
-}
-img[alt="pasto"]{
-    position: absolute;
-    bottom: 50px;
-    left: 80px;
-    height: 90px;
-    width: 1200px;
-}
 img[alt="cabaña1"]{
     position: absolute;
     width: 900px;
     height:450px;
     top: 100px;
     left: 140px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
 }
 img[alt="cap-asus"]{
     position: absolute; 
@@ -366,6 +409,8 @@ img[alt="cap-asus"]{
     height: 160px;
     top: 330px;
     left:400px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
 }
 img[alt="cama"]{
     position: absolute;
@@ -373,6 +418,8 @@ img[alt="cama"]{
     left:680px;
     width: 250px;
     height: 170px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
 }
 img[alt="lobomalo"]{
     position: absolute; 
@@ -380,43 +427,177 @@ img[alt="lobomalo"]{
     height: 270px;
     top: 240px;
     left:500px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
 }
 img[alt="arbusto2"]{
     position: absolute;
     top: 490px;
     left: 0px;
-    width: 1200px;
-    height: 140px;
+    width: 1170px;
+    height: 100px;
     z-index: 2;
-}
-img[alt="arbusto3"]{
-   position: absolute;
-    top: 420px;
-    left: 60px;
-    width: 1100px;
-    height: 140px; 
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
 }
 
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 img[alt="nube1"]{
     position: absolute;
-    top:0px;
-    left: -80px;
-}
-img[alt="nube3"]{
-    position: absolute;
     top: 0px;
-    right: -60px;
+    left:-0px;
+    width: 300px;  
 }
 
 img[alt="luna"]{
     position: absolute;
     top: 20px;
-    left: 25px;
+    left:100px;
     width: 100px;
     height: 100px;
 
 }
+
+/*CAMINO 2-1 YENNY Y LUZ*/
+#camino-2-1{
+    position: absolute;
+    top: 290px;
+    left:-20px;
+    height: 300px;
+    width: 660px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+#casa-2-1{
+    position: absolute;
+    height: 350px;
+    right: 120px;
+    bottom: 150px;
+    width: 750px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+#puerta-2-1{
+    position: absolute;
+    right: 593px;
+    bottom: 202px;
+    width: 50px;
+    height: 96px;
+    opacity: 0;
+    transform: rotateY(-30deg);
+    transform-origin: left;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+    z-index: 2;
+}
+#puerta-2-1:hover{
+    transform: rotateY(-50deg);
+    transform-origin: left;
+}
+#camino-2-1{
+    position: absolute;
+    left: 50px;
+    top: 330px;
+    bottom: 0;
+    width: 600px;
+    height: 200px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+    z-index: 1;
+}
+/* capitulo 3 1*/
+#pag-3-1{
+    background-color:#252555;
+}
+
+img[alt="loboabuela"]{
+    position: absolute; 
+    width: 250px;
+    height: 220px;
+    top: 270px;
+    left:650px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+/*HEAD*/
+
+img[alt="orejaslobo"]{
+    position: absolute; 
+    width: 68px;
+    height: 40px;
+    top: 270px;
+    left:685px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+img[alt="ojoslobo"]{
+    position: absolute; 
+    width: 50px;
+    height: 40px;
+    top: 292px;
+    left:706px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+    
+}
+img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+#cap-3-1{
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    height: 160px;
+    top: 320px;
+    left: 400px;
+    background-size: cover;
+}
+/*CAPERUCITA CAMINA TIPICA ESCENA*/
+@keyframes caminaCaperucita{
+    0%{
+        transform: translateX(0);
+        background-image: url("img/caminata1.png");
+    }
+    25%{
+        transform: translateX(50px);
+        background-image: url("img/caminata3.png");   
+    }
+    50%{
+        transform: translate(100px);
+        background-image: url("img/caminata1.png");
+    }
+    75%{
+        transform: translateX(150px);
+        background-image: url("img/caminata3.png");   
+    }
+    100%{
+        transform: translate(150px);
+        background-image: url("img/caperucita-sorprendida.png");
+    }
+}
+.cap-3-1{animation: caminaCaperucita 6s linear 5s 1 normal forwards;}
+
+.text{
+    position: absolute;
+    top:40px;
+    left: 0px;
+    width: 250px;
+    height: 500px;
+    font-size: 30px;
+     z-index: 2;
+     background-color: rgba(226, 225, 224,0.2);
+     color:black; 
+     border-radius: 20px; 
+}
+@keyframes scale{
+    from{
+        
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
 /* cada animacion de pagina separenlo con un titulo */
 
 

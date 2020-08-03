@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="caperucita-roja.css">
     <title>Caperucita Roja</title>
 </head>
-<body >
+<body  >
     <!-- scroll="no" style="overflow: hidden" -dentro del body para cambiar pag con botones--->
     <main><!-- aqui la grilla...cada article ocupa un espacio-->
         <!-- titulo del libro -->
@@ -47,13 +47,13 @@
                 <div class="cuadrado1 cuadrado inclinacion"></div>
             </div>
             <div class="imagenes">
-                <a href="#pag-1-3"><img src="img/cam-amarillo.png" alt="camino">
+                <a href="#pag-2-2"><img src="img/cam-amarillo.png" alt="camino">
                 <img src="img/arbolC.png" alt="arb2">
                 <img src="img/arbolB.png" alt="arb1">
                 <img src="img/cartel1.png" alt="cartel">
                 <img src="img/casita-cap.png" alt="casa-cap">
-                <img src="img/caminata1.png" alt="cam1">
-                <a href="#pag-2-2"><img src="img/arbusto-flores.png" alt="flor"></a>
+                <div id="cap-camina" class="cap-camina"></div>
+                <a href="#pag-1-3  "><img src="img/arbusto-flores.png" alt="flor"></a>
             </div>
         </article>
 
@@ -87,7 +87,7 @@
 
         <article id="pag-2-1">
             <div class="tit-libro">
-                <p>explicacion de la historia</p>
+                <p style="  font-size: 30px; z-index: 2; background-color: rgba(226, 225, 224,0.2); border-radius: 20px;" ><span style="font-size: 45px ; color: #D01A0B ;">C</span>aperucita finalmente llega a casa de su abuelita luego de una larga caminata ¿habrá ganado la carrera al lobo ? Cuando se acerca a la  le sorprende encontrar la puerta semi abierta...</p>
             </div>
             <!-- parte del libro - no se modifica -->
             <div class="tam-libro" >
@@ -96,6 +96,15 @@
                 <div class="cuadrado-cont1 cuadrado-cont"></div>
                 <div class="cuadrado"></div>
                 <div class="cuadrado1 cuadrado"></div>
+            </div> 
+
+             <div class="imagenes">
+                <div id="cap-3-2" class="cap-3-2"></div>
+                <img src="img/puertaCasa.png" alt="puertaAbierta" id="puerta-2-1">
+                <a href="#pag-3-1"><img src="img/casaLarga2.png" alt="casa" id="casa-2-1"></a>
+                <img src="img/cam-amarillo.png" alt="caminoAmarrillo" id="camino-2-1">
+                
+            </div>
             </div>
             
             <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
@@ -166,7 +175,13 @@
 
         <article id="pag-3-1">
             <div class="tit-libro">
-                <p>explicacion de la historia</p>
+                <p class="text">-Oh abuelita ¿Te sientes bien ?<br>
+                -Claro que si Caperucita<br>
+                -Pero, que orejas tan grandes tienes<br>
+                -Son para escucharte mejor<br>
+                -¿Y tus ojos? Que ojos tan grandes que tienes.<br>
+                -Son para verte mejor...
+                </p>
             </div>
             <!-- parte del libro - no se modifica -->
             <div class="tam-libro" >
@@ -174,10 +189,19 @@
                 <div class="cuadrado-cont2 cuadrado-cont"></div>
                 <div class="cuadrado-cont1 cuadrado-cont"></div>
                 <div class="cuadrado"></div>
-                <div class="cuadrado" id="cuadrado1"></div>
+                <div class="cuadrado1 cuadrado" id="cuadrado1"></div>
             </div>
             <!-- ingreso de imganenes -->
             <div class="imagenes">
+                <div class="imagenes">
+                <img  src="img/nubes11.png" alt="nube1">
+                <img  src="img/arbusto2.png" alt="arbusto2">
+                <img  src="img/interior-casa-abuela.png" alt="cabaña1">
+                <div id="cap-3-1" class="cap-3-1"></div>
+                <img  src="img/lobo abuela.png" alt="loboabuela">
+                <img  src="img/ojoslobo.png" alt="ojoslobo">
+                <img  src="img/orejaslobo.png" alt="orejaslobo">
+                <img  src="img/luna.png" alt="luna">
              </div>
             <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
             <div class="nav">
@@ -235,7 +259,7 @@
 
         <article id="pag-4-1">
             <div class="tit-libro">
-                <p>explicacion de la historia</p>
+                <p></p>
             </div>
             <!-- parte del libro - no se modifica -->
             <div class="tam-libro" >
@@ -247,13 +271,8 @@
             </div>
             <!-- ingreso de imganenes -->
             <div class="imagenes">
-                
-                <div class="imagenes">
                     <img  src="img/nubes11.png" alt="nube1">
-                    <img  src="img/nubes22.png" alt="nube3">
-                    <img  src="img/arbolA.png" alt="arbol">
                     <img  src="img/arbusto2.png" alt="arbusto2">
-                    <img  src="img/arbusto2.png" alt="arbusto3">
                     <img  src="img/interior-casa-abuela.png" alt="cabaña1">
                     <img  src="img/caperucita.asustada (1).png" alt="cap-asus">
                     <img  src="img/camaabuela.png" alt="cama">
