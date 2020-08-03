@@ -22,11 +22,14 @@ article{
     height: 100vh;
     perspective: 1000px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     background-image: url(img/fondo.jpg);
 =======
     background-color: #D0F9F2 ;
+=======
+    background-color:#C3FFF7 ;
+>>>>>>> 3ae112ebc4079fcddc1030183d7f1ea23b4cdb6b
     background-image: url("img/fondo.jpg");
->>>>>>> 2bf512e346cc53e32f97c2cecfa3ff122f68ed05
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -146,15 +149,16 @@ section>a{
     flex-direction: row;
     justify-content: center;
     text-align: center;
+    align-items: center;
     width: 1100px;
     height: 35vh;
     border-radius: 10px;
     border: 2px solid blue;
-<<<<<<< HEAD
     z-index: 3;
-=======
     font-family: 'Dancing Script', cursive;
->>>>>>> 931616affda3c82548c742b628cdf077c477ce5e
+    font-weight: bold; 
+    background-color: rgba(226, 225, 224, 0.3);
+    padding: 0 2em;
 }
 
 /* tamaño del libro en la grilla - al final borrar el border*/
@@ -164,8 +168,8 @@ section>a{
     align-items: center;
     width: 900px;
     height: 300px;
-    border: 2px solid black;
-    border-radius: 10px;
+    /* border: 2px solid black; */
+    /* border-radius: 10px; */
 }
 
 /* ESTILOS DE LA PORTADA DEL LIBRO */
@@ -225,16 +229,9 @@ section>a{
 .cuadrado1{
     animation-name: cuadrado1;
     animation-duration: 5s;
-    /* animation-iteration-count: infinite; */
     animation-timing-function: ease;
     transform-origin: left;
 }  
-#cuadrado1:target{
-    animation-name: cuadrado1;
-    animation-duration: 5s;
-    /* animation-iteration-count: infinite; */
-    transform-origin: left;
-} 
 
 /* estilo boton pag siguiente y anterior*/
 .nav{
@@ -254,31 +251,6 @@ section>a{
     border: 1px solid black;
 }
 
-/* estilo boton de deciciones */
-.opcion-respt{
-    position: absolute;
-    right: 0;
-    top: 5em;
-    height: calc(100vh - 5em);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.opcion-respt>a{
-    width: 10em;
-    height: 3em;
-    margin: 0 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 15px;
-}
-.camino-alternativo{
-    z-index: 1;
-    position: absolute;
-    top: 30vh;
-}
 /* estilo de imagenes */
 /* todas la imagenes ubicadas con posicion absoluto, es mas facil */
 .imagenes{
@@ -287,11 +259,7 @@ section>a{
     height: 80vh;
     border: 2px solid yellow;
 }
-.cap{
-    width: 200px;
-    position: absolute;
-    bottom: 0;
-}
+
 /*ESTILOS ESCENA  YENNY Y LUZ 1*/
 #cap-camina{
     position: absolute;
@@ -441,7 +409,10 @@ img[alt="arbusto2"]{
     animation: opacidad 1s linear 5s 1 normal forwards;
 }
 
+<<<<<<< HEAD
 /*<<<<<<< HEAD*/
+=======
+>>>>>>> 3ae112ebc4079fcddc1030183d7f1ea23b4cdb6b
 img[alt="nube1"]{
     position: absolute;
     top: 0px;
@@ -607,6 +578,8 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
 /* #animacion-2-2{
     perspective: 500px;
 } */
+
+
 #arbusto2-2-2{
     position: absolute;
     z-index: 1;
@@ -686,15 +659,15 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
 @keyframes loboAparece{
     0%{
         transform: translate(-150px,-100px) scale(.6);
-        background-image: url("img/lobo2.png");
+        background-image: url("img/lobo3.png");
     }
     25%{
         transform: translate(-80px,-50px) scale(.8);
-        background-image: url("img/lobo2.png");
+        background-image: url("img/lobo3.png");
     }
     50%{
         transform: translateX(-150px);
-        background-image: url("img/lobo1.png");
+        background-image: url("img/lobo2.png");
     }
     75%{
         transform: translateX(-300px);
@@ -702,12 +675,23 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     }
     100%{
         transform: translateX(-400px);
-        background-image: url("img/lobo1.png");
+        background-image: url("img/lobo2.png");
     }
 }
+/* @keyframes loboHabla{
+    from{
+        background-image: url("img/lobo1.png");
+    }
+    to{
+        background-image: url("img/lobo2.png");
+    }
+} */
 .lobo-2-2{
     animation: loboAparece 5s linear 5s 1 normal forwards;
 }
+/* .lobo-2-2:hover{
+    animation: loboHabla 1s linear 1s infinite normal backwards;
+} */
 /* cartel de opciones pagina2-2 */
 #cartel{
     background-image: url("img/cartel2.png");
@@ -878,7 +862,7 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
 /* pag-5-2 leñador aparece y entra a la casa */
 /* casa y camino la misma que la pag-3-2 */
 #leñador-5-2{
-    background-image: url("img/leñador1.png");
+    /* background-image: url("img/leñador1.png"); */
     position: absolute;
     width: 160px;
     height: 200px;
@@ -886,6 +870,16 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     left: 0;
     background-size: cover;
     z-index: 2;
+}
+#grito1-5-2{
+    /* background-image: url("img/grito1.png"); */
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    bottom: 260px;
+    right: 600px;
+    background-size: contain;
+    z-index: 1;
 }
 @keyframes caminataCasaLeñador{
     0%{
@@ -914,9 +908,35 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     }
 }
 .leñador-5-2{
-    animation: caminataCasaLeñador 8s linear 1s infinite normal forwards;
+    animation: caminataCasaLeñador 6s linear 5s 1 normal forwards;
 }
-
+@keyframes grito{
+    0%{
+        transform: scaleX(1.5);
+        background-image: url("img/grito1.png");
+    }
+    25%{
+        transform: scaleX(2.25) rotate(30deg);
+        background-image: url("img/grito1.png");
+    }
+    50%{
+        transform: scaleX(3);
+        background-image: url("img/grito1.png");
+    }
+    75%{
+        transform: scaleX(2.25) rotate(-15deg);
+        background-image: url("img/grito1.png");
+    }
+    100%{
+        transform: scaleX(1.5);
+        background-image: url("img/grito1.png");
+        opacity: 0;
+    }
+}
+.grito1-5-2{
+    animation: grito 2s linear 7s 3 normal forwards;
+    transform-origin: right;
+}
 
 
 
@@ -926,10 +946,3 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
 /* cada pagina tiene nombre pag-1-1 */
 
 
-
-#casa{
-    background-image: url("img/casaInterior.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
->>>>>>> 2bf512e346cc53e32f97c2cecfa3ff122f68ed05
