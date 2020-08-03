@@ -21,14 +21,14 @@ article{
     width: 100vw;
     height: 100vh;
     perspective: 1000px;
-<<<<<<< HEAD
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
+/*<<<<<<< HEAD*/
     background-image: url(img/fondo.jpg);
-=======
+/*=======*/
     background-color: #D0F9F2 ;
-=======
+/*=======*/
     background-color:#C3FFF7 ;
->>>>>>> 3ae112ebc4079fcddc1030183d7f1ea23b4cdb6b
+/*>>>>>>> 3ae112ebc4079fcddc1030183d7f1ea23b4cdb6b*/
     background-image: url("img/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -409,10 +409,9 @@ img[alt="arbusto2"]{
     animation: opacidad 1s linear 5s 1 normal forwards;
 }
 
-<<<<<<< HEAD
 /*<<<<<<< HEAD*/
-=======
->>>>>>> 3ae112ebc4079fcddc1030183d7f1ea23b4cdb6b
+
+/*>>>>>>> 3ae112ebc4079fcddc1030183d7f1ea23b4cdb6b*/
 img[alt="nube1"]{
     position: absolute;
     top: 0px;
@@ -460,10 +459,12 @@ img[alt="luna"]{
     animation: opacidad 1s linear 5s 1 normal forwards;
     z-index: 2;
 }
+
 #puerta-2-1:hover{
     transform: rotateY(-50deg);
     transform-origin: left;
 }
+
 #camino-2-1{
     position: absolute;
     left: 50px;
@@ -548,26 +549,7 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
 }
 .cap-3-1{animation: caminaCaperucita 6s linear 5s 1 normal forwards;}
 
-.text{
-    position: absolute;
-    top:40px;
-    left: 0px;
-    width: 250px;
-    height: 500px;
-    font-size: 30px;
-     z-index: 2;
-     background-color: rgba(226, 225, 224,0.2);
-     color:black; 
-     border-radius: 20px; 
-}
-@keyframes scale{
-    from{
-        
-    }
-    to{
-        transform: scale(1.2);
-    }
-}
+
 
 /* cada animacion de pagina separenlo con un titulo */
 
