@@ -560,8 +560,16 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
 /* #animacion-2-2{
     perspective: 500px;
 } */
-
-
+#cam-amarillo2{
+    position: absolute;
+    z-index: 1;
+    width: 90vw;
+    height: 400px;
+    left: -50px;
+    bottom: -60px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
 #arbusto2-2-2{
     position: absolute;
     z-index: 1;
@@ -631,7 +639,7 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     }
     100%{
         transform: translateX(400px);
-        background-image: url("img/caperucita2.png");
+        background-image: url("img/caperucita-sorprendida.png");
     }
 }
 .cap-2-2{
@@ -682,7 +690,7 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     z-index: 1;
     width: 180px;
     height: 200px;
-    bottom: 90px;
+    bottom: 70px;
     right: 30px;
     background-size: cover;
     opacity: 0;
@@ -920,6 +928,39 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     transform-origin: right;
 }
 
+/* pag-5-1 leñador salva a caperucita y abuela */
+#leñador-5-1{
+    background-image: url("img/leñador1.png");
+    position: absolute;
+    width: 160px;
+    height: 200px;
+    bottom: 70px;
+    left: 0;
+    background-size: cover;
+    z-index: 2;
+}
+#cap-5-1{
+    background-image: url("img/caperucita.png");
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    height: 150px;
+    bottom: 70px;
+    left: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#abuela-5-1{
+    background-image: url("img/abuela1.png");
+    position: absolute;
+    z-index: 2;
+    width: 150px;
+    height: 200px;
+    bottom: 70px;
+    left: 400px;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
 
 
 
