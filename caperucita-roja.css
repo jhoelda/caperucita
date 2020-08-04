@@ -920,7 +920,178 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     transform-origin: right;
 }
 
+/* ESTILOS CATA Y BEL */
+/* Pag 1-3 */
+#lobo-1-3{
+    position: absolute;
+    z-index: 3;
+    width: 200px;
+    height: 280px;
+    bottom: 0;
+    right: 0;
+    background-size: contain;
+}
 
+@keyframes loboAparece{
+    0%{
+        transform: translate(-150px,-100px) scale(.6);
+        background-image: url("img/lobomejorado2.png");
+    }
+    25%{
+        transform: translate(-80px,-50px) scale(.8);
+        background-image: url("img/lobomejorado2.png");
+    }
+    50%{
+        transform: translateX(-150px);
+        background-image: url("img/lobomejorado.png");
+    }
+    75%{
+        transform: translateX(-300px);
+        background-image: url("img/lobomejorado.png");
+    }
+    100%{
+        transform: translateX(-400px);
+        background-image: url("img/lobomejorado.png");
+    }
+}
+.lobo-1-3{
+    animation: loboAparece 5s linear 5s 1 normal forwards;
+}
+
+#arbolc-1-2{
+    position: absolute;
+    height: 600px;
+    left: -100px;
+    z-index: 1;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+
+}
+
+#arbusto2copia{
+    position: absolute;
+    top: 500px;
+    left: 150px;
+    opacity: 0;
+    z-index: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+
+#arbusto3copia{
+    position: absolute;
+    top: 460px;
+    left: 600px;
+    opacity: 0;
+    z-index: -1;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+    transform: rotateX(10deg);
+    transform: rotateY(11deg);
+}
+
+#arbusto1-2-2{
+    position: absolute;
+    z-index: 1;
+    width: 700px;
+    height: 100px;
+    left: 130px;
+    top: 45vh;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+
+#arbustofloreado{
+    position: absolute;
+    right: 80px;
+    top: 240px;
+    height: 100px;
+    width: 350px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+    transform: rotateY(35deg);
+
+    
+}
+
+#pastito1{
+    position: absolute;
+    width: 110px;
+    height: 120px;
+    right: 250px;
+    top: 350px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+
+}
+
+#pastito2{
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 200px;
+    top: 350px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+
+#pastito4{
+    position: absolute;
+    width: 80px;
+    height: 90px;
+    right: 80px;
+    top: 500px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+
+#pastito3{
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    right: 25px;
+    top: 520px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+
+#pastito5{
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    right: 200px;
+    top: 300px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+
+}
+
+#arbustofloreado2{
+    position: absolute;
+    transform: rotate(20deg);
+    top: 140px;
+    left: 400px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+
+}
+
+#arbustofloreado3{
+    position: absolute;
+    transform: rotate(25deg);
+    top:375px;
+    right: 180px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+
+#pastito6{
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    right: 200px;
+    top: 400px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
 
 
 
