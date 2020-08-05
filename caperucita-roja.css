@@ -1331,7 +1331,10 @@ img[alt="cama2"]{
     animation: opacidad 1s linear 5s 1 normal forwards;
 }
 
+<<<<<<< HEAD
 /* <<<<<<< HEAD */
+=======
+>>>>>>> 9d36e22332e0d9c21b6281d647757cf18f845fdf
 #cama4-3{
     position: absolute; 
     width: 250px;
@@ -1341,7 +1344,10 @@ img[alt="cama2"]{
     opacity: 0;
     animation: opacidad 1s linear 5s 1 normal forwards;
 }
+<<<<<<< HEAD
 /* ======= */
+=======
+>>>>>>> 9d36e22332e0d9c21b6281d647757cf18f845fdf
 /*Pag 2-3*/
 @keyframes caminata{
 
@@ -1359,15 +1365,32 @@ img[alt="cama2"]{
     bottom:350px;
 }
 
-.loboenojado{
+#loboenojado2{
     position: absolute;
     left: 570px;
     height: 295px;
     width: 210px;
+<<<<<<< HEAD
     background: url("img/loboenojado.png");
     animation: caminata .8s steps(5) infinite;
+=======
+    background: url(img/loboenojado.png);
+    animation: caminata .9s steps(5) infinite;
+>>>>>>> 9d36e22332e0d9c21b6281d647757cf18f845fdf
 }
 
+#floresvolando{
+    left: 250px;
+    bottom: 30px;
+    position: absolute;
+    
+}
+#floresvolando1{
+    left: 250px;
+    bottom: 20px;
+    position: absolute;
+    
+}
 /*pag 3-3 */
 
 @keyframes walk {
@@ -1480,6 +1503,122 @@ z-index:8;
     z-index:1;
     animation-name: opacidad 1s linear 5s 1 normal forwards;
 }
+<<<<<<< HEAD
+=======
+    
+
+
+
+/* pag-5-1 leñador salva a caperucita y abuela */
+#leñador-5-1, #cap-5-1, #abuela-5-1{
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+#leñador-5-1{
+    /* background-image: url("img/leñador1.png"); */
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    bottom: 70px;
+    left: 300px;
+    transform-origin: bottom;
+}
+#cap-5-1{
+    /* background-image: url("img/caperucita.png"); */
+    position: absolute;
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+    bottom: 70px;
+    left: 300px;
+}
+#abuela-5-1{
+    /* background-image: url("img/abuela1.png"); */
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    height: 200px;
+    bottom: 70px;
+    left: 400px;
+}
+@keyframes leñadorCasa{
+    0%{
+        background-image: url("img/leñador7.png");
+    }
+    10%{
+        transform: translate(100px, -40px);
+        background-image: url("img/leñador3.png");
+    }
+    20%{
+        transform: translate(200px, -40px) scaleY(1.1);
+        background-image: url("img/leñador5.png");
+    }
+    30%{
+        transform: translate(300px, -40px);
+        background-image: url("img/leñador10.png");
+    }
+    40%{
+        transform: translate(250px, -40px);
+        background-image: url("img/leñador11.png");
+    }
+    50%{
+        transform: translate(300px, -40px);
+        background-image: url("img/leñador10.png");
+    }
+    60%{
+        transform: translate(250px, -40px);
+        background-image: url("img/leñador11.png");
+    }
+    70%{
+        transform: translate(300px, -40px);
+        background-image: url("img/leñador12.png");
+    }
+    80%{
+        transform: translate(300px, -40px) ;
+        background-image: url("img/leñador3.png");
+    }
+    90%{
+        transform: translate(180px, -30px) ;
+        background-image: url("img/leñador3.png");
+    }
+    100%{
+        transform: translate(180px, -30px) ;
+        background-image: url("img/leñador4.png");
+    }
+}
+.leñador-5-1{
+    animation: leñadorCasa 25s linear 5s 1 normal forwards;
+}
+@keyframes abuelaSale{
+    0%{
+        background-image: url("img/abuela1.png");
+    }
+    30%{
+        background-image: url("img/abuela2.png")
+    }
+    70%{
+        background-image: url("img/abuela5.png")
+    }
+    100%{
+        background-image: url("img/abuela4.png");
+    }
+}
+.abuela-5-1{
+    animation: abuelaSale 15s linear 14s 1 normal forwards;
+}
+@keyframes capSale{
+    0%{
+        background-image: url("img/caperucita-sorprendida.png");
+    }
+    100%{
+        background-image: url("img/caperucita.png");
+    }
+}
+.cap-5-1{
+    animation: capSale 5s linear 19s 1 normal forwards;
+}
+>>>>>>> 9d36e22332e0d9c21b6281d647757cf18f845fdf
 
 /* >>>>>>> 8924f51a5b7875250aaa51b2159025807e86f114 */
 
