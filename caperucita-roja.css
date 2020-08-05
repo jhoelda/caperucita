@@ -966,6 +966,7 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     animation: loboAparece 5s linear 5s 1 normal forwards;
 }
 
+
 #arbolc-1-2{
     position: absolute;
     height: 600px;
@@ -1090,6 +1091,18 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     opacity: 0;
     animation: opacidad 1s linear 5s 1 normal forwards;
 }
+
+#cama4-3{
+    position: absolute; 
+    width: 250px;
+    height: 220px;
+    top: 270px;
+    left:650px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+
+
 /* pag-5-1 leñador salva a caperucita y abuela */
 #leñador-5-1{
     background-image: url("img/leñador1.png");
