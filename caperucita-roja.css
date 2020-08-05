@@ -33,14 +33,24 @@ article{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/*ESTILO DE LOS PARRAFOS*/
+p{
+    font-size: 35px; 
+    list-style: none;
+}
+span{
+    font-size: 45px ; 
+    color: #D01A0B ;
+}
+ul{
+    font-size: 28px;
+     list-style: none;
+}
+li>span{
+    font-size: 30px ; color: #D01A0B ;
+}
 /* estilos de la portada */
 
-#pag-1-2,#pag-1-1{
-        background-color:#C3FFF7 ; 
-}
-#pag-2-1{
-    background-color: #FFC96C ;
-}
 
 .cont{
     width: 430px;
@@ -159,6 +169,7 @@ section>a{
     font-weight: bold; 
     background-color: rgba(226, 225, 224, 0.3);
     padding: 0 2em;
+
 }
 
 /* tamaño del libro en la grilla - al final borrar el border*/
@@ -260,8 +271,20 @@ section>a{
     border: 2px solid yellow;
 }
 
-/*ESTILOS ESCENA  YENNY Y LUZ 1*/
-#cap-camina{
+/*ESTILOS ESCENA  1-2, 3-1 y 4-1 YENNY Y LUZ 1*/
+#pag-1-2,#pag-1-1{
+        background-color:#C3FFF7 ; 
+}
+#pag-2-1{
+    background-color: #FFC96C ;
+}
+#pag-3-1, #pag-4-1{
+    background-color:#252555;
+}
+
+ /*1-2*/
+
+#cap-1-2{
     position: absolute;
     z-index: 2;
     width: 120px;
@@ -270,31 +293,33 @@ section>a{
     left: 0;
     background-size: cover;
 }
-@keyframes cap-camina{
+@keyframes caminata{
     0%{
         transform: translateX(0);
         background-image: url("img/caminata1.png");
     }
     25%{
-        transform: translateX(150px) translateY(-20px);
+        transform: translateX(100px) translateY(-20px);
         background-image: url("img/caminata3.png");
     }
     50%{
-        transform: translateX(250px);
+        transform: translateX(200px);
         background-image: url("img/caminata1.png");
     }
     75%{
-        transform: translateX(350px) translateY(-20px);
+        transform: translateX(300px) translateY(-20px);
         background-image: url("img/caminata3.png");
     }
     100%{
-        transform: translateX(450px);
+        transform: translateX(400px);
         background-image: url("img/caperucita2.png");
     }
 }
-.cap-camina{
-    animation: cap-camina 8s linear 7s 1 normal forwards;
+.cap-1-2{
+    animation: caminata 7s linear 5s 1 normal forwards;
 }
+
+
 img[alt="arb1"]{
     width: 250px;
     height: 300px;
@@ -359,91 +384,13 @@ img[alt="camino"]:hover,img[alt="flor"]:hover{
     transform: scale(1.2);
     transition: 1.5s;
 }
-/*ESTILOS LOBO SE COME A CAPERUCITA YENNY Y LUZ*/
-#pag-4-1{background-color:#252555;}
-
-img[alt="cabaña1"]{
-    position: absolute;
-    width: 900px;
-    height:450px;
-    top: 100px;
-    left: 140px;
-    opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
-}
-img[alt="cap-asus"]{
-    position: absolute; 
-    width: 100px;
-    height: 160px;
-    top: 330px;
-    left:400px;
-    opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
-}
-img[alt="cama"]{
-    position: absolute;
-    top: 330px;
-    left:680px;
-    width: 250px;
-    height: 170px;
-    opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
-}
-img[alt="lobomalo"]{
-    position: absolute; 
-    width: 180px;
-    height: 270px;
-    top: 240px;
-    left:500px;
-    opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
-}
-img[alt="arbusto2"]{
-    position: absolute;
-    top: 490px;
-    left: 0px;
-    width: 1170px;
-    height: 100px;
-    z-index: 2;
-    opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
-}
-
-/*<<<<<<< HEAD*/
-
-/*>>>>>>> 3ae112ebc4079fcddc1030183d7f1ea23b4cdb6b*/
-img[alt="nube1"]{
-    position: absolute;
-    top: 0px;
-    left:-0px;
-    width: 300px;  
-}
-
-img[alt="luna"]{
-    position: absolute;
-    top: 20px;
-    left:100px;
-    width: 100px;
-    height: 100px;
-
-}
-
 /*CAMINO 2-1 YENNY Y LUZ*/
-#camino-2-1{
-    position: absolute;
-    top: 290px;
-    left:-20px;
-    height: 300px;
-    width: 660px;
-    opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
-}
 #casa-2-1{
     position: absolute;
-    height: 350px;
-    right: 120px;
+    left: 350px;
     bottom: 150px;
-    width: 750px;
+    width: 700px;
+    height: 350px;
     opacity: 0;
     animation: opacidad 1s linear 5s 1 normal forwards;
 }
@@ -452,14 +399,13 @@ img[alt="luna"]{
     right: 593px;
     bottom: 202px;
     width: 50px;
-    height: 96px;
+    height: 95px;
     opacity: 0;
     transform: rotateY(-30deg);
     transform-origin: left;
     animation: opacidad 1s linear 5s 1 normal forwards;
     z-index: 2;
 }
-
 #puerta-2-1:hover{
     transform: rotateY(-50deg);
     transform-origin: left;
@@ -476,44 +422,75 @@ img[alt="luna"]{
     animation: opacidad 1s linear 5s 1 normal forwards;
     z-index: 1;
 }
-/* capitulo 3 1*/
-#pag-3-1{
-    background-color:#252555;
-}
-
-img[alt="loboabuela"]{
-    position: absolute; 
-    width: 250px;
-    height: 220px;
-    top: 270px;
-    left:650px;
+/* CAMINO 3-1*/
+.uno{
     opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
+    animation: opacidad 1s linear 10s 1 normal forwards;
+    
 }
-/*HEAD*/
+.dos{
+    opacity: 0;
+    animation: opacidad 1s linear 12s 1 normal forwards;
+    
+}
+.tres{
+    opacity: 0;
+    animation: opacidad 1s linear 14s 1 normal forwards;
+    
+}
+.cuatro{
+    opacity: 0;
+    animation: opacidad 1s linear 16s 1 normal forwards;
+    
+}
+.cinco{
+    opacity: 0;
+    animation: opacidad 1s linear 18s 1 normal forwards;
+    
+}
+.seis{
+    opacity: 0;
+    animation: opacidad 1s linear 20s 1 normal forwards;
+    
+}
 
 img[alt="orejaslobo"]{
-    position: absolute; 
-    width: 68px;
-    height: 40px;
+    position: absolute;
+    z-index: 2; 
+    width: 69px;
+    height: 42px;
     top: 270px;
     left:685px;
     opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
+    transform: scale(1.4);
+    transition: 3s;
+    transition-duration: 2s;
+    animation: opacidad 1s linear 14s 1 normal ;
 }
 img[alt="ojoslobo"]{
-    position: absolute; 
+    position: absolute;
+    z-index: 2;  
     width: 50px;
     height: 40px;
     top: 292px;
     left:706px;
     opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
-    
-}
-img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
-    transform: scale(1.2);
+    animation: opacidad 1s linear 8s 1 normal forwards;  
     transition: 1.5s;
+}
+
+.ojos-grandes{
+    position: absolute;
+    z-index: 2;  
+    width: 50px;
+    height: 40px;
+    top: 292px;
+    left:706px;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: 1s;
+    transition-duration: 2s;
+    animation: opacidad 1s linear 18s 1 normal ;  
 }
 #cap-3-1{
     position: absolute;
@@ -523,6 +500,34 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     top: 320px;
     left: 400px;
     background-size: cover;
+}
+img[alt="placar"]{
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    top: 270px;
+    left: 430px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;  
+
+}
+a[ href="#pag-4-1"]{
+    position: absolute;
+    top: 440px;
+    left: 400px;
+    width: 100px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    animation: opacidad 1s linear 20s 1 normal forwards; 
+    border-radius: 20px; 
+
+}
+a[ href="#pag-4-1"]:hover{
+    background-color: rgba(0,0,0,0.7);
+    border: 1px solid white;
+
 }
 /*CAPERUCITA CAMINA TIPICA ESCENA*/
 @keyframes caminaCaperucita{
@@ -548,9 +553,121 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     }
 }
 .cap-3-1{animation: caminaCaperucita 6s linear 5s 1 normal forwards;}
+#loboAbu{
+    position: absolute;
+    z-index: 2; 
+    width: 250px;
+    height: 220px;
+    top: 270px;
+    left:650px;
+    background-size: cover;
+    background-image: url(img/loboDormido.png);
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
 
+}
 
+/*ESTILOS 4-1 YENNY Y LUZ*/
+#pag-4-1{background-color:#252555;}
+img[alt="arbusto2"]{
+    position: absolute;
+    top: 490px;
+    left: 0px;
+    width: 1170px;
+    height: 100px;
+    z-index: 2;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
 
+img[alt="nube1"]{
+    position: absolute;
+    top: 0px;
+    left:-0px;
+    width: 300px;  
+}
+
+img[alt="luna"]{
+    position: absolute;
+    top: 20px;
+    left:100px;
+    width: 100px;
+    height: 100px;
+
+}
+
+img[alt="cabaña1"]{
+    position: absolute;
+    width: 900px;
+    height:450px;
+    top: 100px;
+    left: 140px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+img[alt="cap-asus"]{
+    position: absolute; 
+    width: 100px;
+    height: 160px;
+    top: 330px;
+    left:400px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+#cama{
+    position: absolute;
+    z-index: 2;
+    top: 250px;
+    left:590px;
+    width: 280px;
+    height: 240px;
+    background-size: cover;
+}
+@keyframes cama{
+    0%{
+        background-image: url("img/lobo_abuela.png");
+    }
+    25%{
+        background-image: url("img/lobo_abuela.png");   
+    }
+    50%{
+        background-image: url("img/camaabuela.png");
+    }
+}
+.cama-abuela{animation: cama 10s linear 5s 1 normal forwards;}
+img[alt="cama2"]{
+    position: absolute;
+    z-index: 2;
+    top:250px;
+    left:598px;
+    width: 305px;
+    height: 265px;
+    opacity: 0;
+    animation: opacidad 1s linear 10s 1 normal forwards;
+
+}
+
+.lobo-ataca{
+    position: absolute;
+    top: 330px;
+    left:0px;
+    width: 250px;
+    height: 170px;
+    background-size: cover;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+
+.caperucita-asustada{
+    position: absolute;
+    top: 330px;
+    left:380px;
+    width: 250px;
+    height: 170px;
+    background-size: cover;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
 /* cada animacion de pagina separenlo con un titulo */
 
 
@@ -1092,6 +1209,7 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     animation: opacidad 1s linear 5s 1 normal forwards;
 }
 
+<<<<<<< HEAD
 #cama4-3{
     position: absolute; 
     width: 250px;
@@ -1101,6 +1219,112 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     opacity: 0;
     animation: opacidad 1s linear 5s 1 normal forwards;
 }
+=======
+/*Pag 2-3*/
+@keyframes caminata{
+
+    /* Primera viñeta del sprite sheet */
+0% { background-position:0 }
+/* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
+100% { background-position:-1050px }
+
+}
+.loboenojado{
+    bottom:2px;
+    position: absolute;
+    height: 295px;
+    width: 210px;
+    background: url(img/loboenojado.png);
+    animation: caminata .8s steps(5) infinite;
+}
+
+/*pag 3-3 */
+
+@keyframes walk {
+0% { background-position:0 }
+100% { background-position:-1000px } 
+}
+
+@keyframes rotacion{
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg); }
+}
+
+#sol{
+    position: absolute;
+    width: 100px;
+    left: 300px;
+    top: 60px; 
+    animation: rotacion .5s steps(8) infinite;
+    animation-name: opacidad 1s linear 5s 1 normal forwards;
+}
+#casa-3-3{
+    position: absolute;
+    right: 140px;
+    width: 700px;
+    height:300px;
+    top:100px;
+    z-index:5;
+}
+#arbustofondo{
+    position: absolute;
+    width: 750px;
+    top: 240px;
+    z-index: 3;
+    left: 220px;
+    height: 70px;
+}
+#arbolito{
+    height: 250px;
+    z-index: 4;
+    top: 110px;
+    position: absolute;
+    left:110px;
+}
+
+#caminito{
+    position: absolute;
+    left: 330px;
+    width: 290px;
+    top: 345px;
+    z-index: 6;
+}
+
+#caminata{
+position: absolute;
+left: 180px;
+bottom: 10px;
+height: 220px;
+width: 200px;
+background: url(img/caminata.png);
+animation: walk .8s steps(5) infinite;
+z-index:8;
+}
+
+#pastitos{
+    position: absolute;
+    width: 1200px;
+    height: 40px;
+    bottom: -55px;
+    z-index:7;
+}
+#margaritas {
+    position: absolute;
+    top: 235px;
+    left: 200px;
+    height: 380px;
+    z-index:2;
+}
+#margaritas2{
+    position: absolute;
+    top: 235px;
+    height: 380px;
+    right: 200px;
+    z-index:1;
+}
+    
+
+>>>>>>> 8924f51a5b7875250aaa51b2159025807e86f114
 
 
 /* pag-5-1 leñador salva a caperucita y abuela */

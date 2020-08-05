@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,10 @@
     <title>Caperucita Roja</title>
 </head>
 <body  >
+
     <!-- scroll="no" style="overflow: hidden" -dentro del body para cambiar pag con botones--->
-    <main><!-- aqui la grilla...cada article ocupa un espacio-->
+    <main>
+        <!-- aqui la grilla...cada article ocupa un espacio-->
         <!-- titulo del libro -->
         <article id="pag-1-1">
             <div class="cont">
@@ -47,12 +49,12 @@
                 <div class="cuadrado1 cuadrado inclinacion"></div>
             </div>
             <div class="imagenes">
-                <a href="#pag-2-2"><img src="img/cam-amarillo.png" alt="camino">
+                <a href="#pag-2-2"><img src="img/cam-amarillo.png" alt="camino"></a>
                 <img src="img/arbolC.png" alt="arb2">
                 <img src="img/arbolB.png" alt="arb1">
                 <img src="img/cartel1.png" alt="cartel">
                 <img src="img/casita-cap.png" alt="casa-cap">
-                <div id="cap-camina" class="cap-camina"></div>
+                <div id="cap-1-2" class="cap-1-2"></div>
                 <a href="#pag-1-3  "><img src="img/arbusto-flores.png" alt="flor"></a>
             </div>
         </article>
@@ -110,7 +112,7 @@
 
         <article id="pag-2-1">
             <div class="tit-libro">
-                <p style="  font-size: 35px; list-style: none;"><span style="font-size: 45px ; color: #D01A0B ;">C</span>aperucita camina y camina hasta llegar a la casa de su abuela, se acerca a la puerta y se encuentra con la puerta abierta. Le avisa a la abuelita que ya había llegado y la abuelita le responde que pase. Caperucita le hace caso, y llega a la habitación de su abuela. Pero había algo raro en ella...</p>
+                <p ><span >C</span>aperucita camina y camina hasta llegar a la casa de su abuela, se acerca a la puerta y se encuentra con la puerta abierta. Le avisa a la abuelita que ya había llegado y la abuelita le responde que pase. Caperucita le hace caso, y llega a la habitación de su abuela. Pero había algo raro en ella...</p>
             </div>
             <div class="tam-libro" >
                 <div class="cuadrado-cont3 cuadrado-cont"></div>
@@ -125,11 +127,8 @@
                 <img src="img/puertaCasa.png" alt="puertaAbierta" id="puerta-2-1">
                 <a href="#pag-3-1"><img src="img/casaLarga2.png" alt="casa" id="casa-2-1"></a>
                 <img src="img/cam-amarillo.png" alt="caminoAmarrillo" id="camino-2-1">
-                
-            </div>
             </div>
             
-            <div class="imagenes" id="animacion-2-1"></div>
             <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
             <div class="nav">
                 <a href="#pag-2-2" class="pagAtras">Atras</a>
@@ -139,8 +138,8 @@
 
         <article id="pag-2-2">
             <div class="tit-libro">
-                <ul style="  font-size: 28px; list-style: none;">
-                    <li><span style="font-size: 30px ; color: #D01A0B ;">C</span>aperucita continua por el camino hacia la casa de la abuela. Cuando a mitad de este se encuentra con un lobo.</li>
+                <ul>
+                    <li><span>C</span>aperucita continua por el camino hacia la casa de la abuela. Cuando a mitad de este se encuentra con un lobo.</li>
                     <li>-Hola caperucita, ¿A donde estas yendo con esa canasta?</li>
                     <li>-Estoy yendo a la casa de mi abuela, a llevarle algunas cosas para comer.</li>
                     <li>-¿A tu abuela? Yo tambien queria ir a verla, ¿Que te parece si hacemos una carrera?</li>
@@ -196,7 +195,9 @@
                 <div class="cuadrado1 cuadrado"></div>
             </div>
             <!-- ingreso de imganenes -->
-            <div class="imagenes"> </div>
+            <div class="imagenes"> 
+                <div class="loboenojado" ></div>
+            </div>
             <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
             <div class="nav">
                 <a href="#pag-1-3" class="pagAtras">Atras</a>
@@ -206,15 +207,15 @@
 
         <article id="pag-3-1">
             <div class="tit-libro">
-                <p class="text">-Oh abuelita ¿Te sientes bien ?<br>
-                -Claro que si Caperucita<br>
-                -Pero, que orejas tan grandes tienes<br>
-                -Son para escucharte mejor<br>
-                -¿Y tus ojos? Que ojos tan grandes que tienes.<br>
-                -Son para verte mejor...
-                </p>
+                <ul>
+                    <li class="uno">-<span>O</span>h abuelita ¿Te sientes bien?</li>
+                    <li class="dos">-Claro que si Caperucita</li>
+                    <li class="tres">-Pero, que orejas tan grandes tienes</li>
+                    <li class="cuatro">-Son para escucharte mejor</li>
+                    <li class="cinco">-¿Y tus ojos? que ojos tan grandes tienes</li>
+                    <li class="seis">-Son para verte mejor...</li>
+                </ul>
             </div>
-            <!-- parte del libro - no se modifica -->
             <div class="tam-libro" >
                 <div class="cuadrado-cont3 cuadrado-cont"></div>
                 <div class="cuadrado-cont2 cuadrado-cont"></div>
@@ -222,19 +223,22 @@
                 <div class="cuadrado"></div>
                 <div class="cuadrado1 cuadrado" id="cuadrado1"></div>
             </div>
-            <!-- ingreso de imganenes -->
             <div class="imagenes">
                 <div class="imagenes">
                 <img  src="img/nubes11.png" alt="nube1">
                 <img  src="img/arbusto2.png" alt="arbusto2">
                 <img  src="img/interior-casa-abuela.png" alt="cabaña1">
-                <div id="cap-3-1" class="cap-3-1"></div>
-                <img  src="img/lobo_abuela.png" alt="loboabuela">
+                <img  src="img/placar.png" alt="placar">
+                <div  id="loboAbu"></div>
                 <img  src="img/ojoslobo.png" alt="ojoslobo">
+                <img  src="img/ojoslobo.png" alt="ojoslobo2" class="ojos-grandes">
                 <img  src="img/orejaslobo.png" alt="orejaslobo">
                 <img  src="img/luna.png" alt="luna">
+                <div id="cap-3-1" class="cap-3-1"></div>
+
+
              </div>
-            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            </div>
             <div class="nav">
                 <a href="#pag-2-1" class="pagAtras">Atras</a>
                 <a href="#pag-4-1" class="pagSiguiente">Siguiente</a>
@@ -243,7 +247,7 @@
 
         <article id="pag-3-2">
             <div class="tit-libro">
-                <p style="  font-size: 35px; list-style: none;"><span style="font-size: 45px ; color: #D01A0B ;">C</span>aperucita camina y camina hasta llegar a la casa de su abuela, se acerca a la puerta y se encuentra con la puerta abierta. Le avisa a la abuelita que ya había llegado y la abuelita le responde que pase. Caperucita le hace caso, y llega a la habitación de su abuela. Pero había algo raro en ella...</p>
+                <p ><span>C</span>aperucita camina y camina hasta llegar a la casa de su abuela, se acerca a la puerta y se encuentra con la puerta abierta. Le avisa a la abuelita que ya había llegado y la abuelita le responde que pase. Caperucita le hace caso, y llega a la habitación de su abuela. Pero había algo raro en ella...</p>
             </div>
             <!-- parte del libro - no se modifica -->
             <div class="tam-libro" >
@@ -280,7 +284,17 @@
                 <div class="cuadrado1 cuadrado"></div>
             </div>
             <!-- ingreso de imganenes -->
-            <div class="imagenes"> </div>
+            <div class="imagenes">
+               <div class="caminata"> <div id="caminata" ></div> </div>
+                <img src="img/pasto.png" alt="pasto" id="pastitos" >
+                <img src="img/casaLarga.png" alt="casadelaabuela" id="casa-3-3" >
+                <img src=img/arbusto2.png alt="fondo" id="arbustofondo" >
+                <img src="img/arbolc.png" alt="arbusto" id="arbolito" >
+                <img src="img/sol2.png" alt="sol" id="sol" >
+                <img src="img/cam-amarillo.png" alt="caminoalacasa" id="caminito" >
+                <img src="img/margaritas.png" alt="margaritas"id="margaritas" >
+                <img src="img/margaritas.png" alt="margaritas"id="margaritas2" >
+            </div>
             <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
             <div class="nav">
                 <a href="#pag-2-3" class="pagAtras">Atras</a>
@@ -290,7 +304,10 @@
 
         <article id="pag-4-1">
             <div class="tit-libro">
-                <p></p>
+                <ul>
+                   <li>-<span>A</span>buelita pero que grandes dientes tienes</li> 
+                   <li>-Son para comerte mejor</li> 
+                </ul>
             </div>
             <!-- parte del libro - no se modifica -->
             <div class="tam-libro" >
@@ -300,18 +317,18 @@
                 <div class="cuadrado"></div>
                 <div class="cuadrado1 cuadrado"></div>
             </div>
-            <!-- ingreso de imganenes -->
             <div class="imagenes">
                     <img  src="img/nubes11.png" alt="nube1">
                     <img  src="img/arbusto2.png" alt="arbusto2">
                     <img  src="img/interior-casa-abuela.png" alt="cabaña1">
-                    <img  src="img/caperucita.asustada (1).png" alt="cap-asus">
-                    <img  src="img/camaabuela.png" alt="cama">
-                    <img  src="img/lobo.png" alt="lobomalo">
+                    <img  src="img/placar.png" alt="placar">
+                    <div class="lobo-ataca"></div>
+                    <div class="caperucita-asustada"></div>
+                    <div class="cama-abuela" id="cama"></div>
                     <img  src="img/luna.png" alt="luna">
+                    <img  src="img/camaabuela.png" alt="cama2">
+
              </div>
-             </div>
-            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
             <div class="nav">
                 <a href="#pag-3-1" class="pagAtras">Atras</a>
                 <p></p>
@@ -374,7 +391,7 @@
 
         <article id="pag-5-1">
             <div class="tit-libro">
-                <p style="  font-size: 30px; list-style: none;"><span style="font-size: 30px ; color: #D01A0B ;">A</span>l entrar se encuentra con el lobo ya dormido y con la panza bien hinchada. Al verlo asi, se imagino que es lo que pudo haber ocurrido. Entonces agarro su Acha y sin pensarlo corto la panza del lobo. Caperucita y la abuelita salen felices y aliviadas y le agradecen al cazador por haberlas salvado.</p>
+                <p><span>A</span>l entrar se encuentra con el lobo ya dormido y con la panza bien hinchada. Al verlo asi, se imagino que es lo que pudo haber ocurrido. Entonces agarro su Acha y sin pensarlo corto la panza del lobo. Caperucita y la abuelita salen felices y aliviadas y le agradecen al cazador por haberlas salvado.</p>
             </div>
             <!-- parte del libro - no se modifica -->
             <div class="tam-libro" >
@@ -402,7 +419,7 @@
 
         <article id="pag-5-2">
             <div class="tit-libro">
-                <p style="  font-size: 30px; list-style: none;"><span style="font-size: 30px ; color: #D01A0B ;">E</span>n el momento en que se oyen los gritos, pasaba por ahi un leñador, quien los oyó y corrio hacia la casa de la abuelita a ver que es lo que pasaba. Sin pensarlo entro.</p>
+                <p><span>E</span>n el momento en que se oyen los gritos, pasaba por ahi un leñador, quien los oyó y corrio hacia la casa de la abuelita a ver que es lo que pasaba. Sin pensarlo entro.</p>
             </div>
             <!-- parte del libro - no se modifica -->
             <div class="tam-libro" >
