@@ -1608,6 +1608,41 @@ z-index:8;
     top: 170px;
     right: 370px;
 }
+#leñador-5-3{
+    /* background-image: url("img/leñador1.png"); */
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 340px;
+    left: 100px;
+    transform-origin: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+#abuela-5-3{
+    /* background-image: url("img/abuela1.png"); */
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    height: 200px;
+    top: 300px;
+    right: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+.loboenojado3{
+    position: absolute;
+    top: 300px;
+    left: 10px;
+    height: 295px;
+    width: 210px;
+    background: url(img/loboenojado.png);
+    animation: opacidad 30s, caminata .9s steps(5) infinite;
+}
+
 
 
 /* pag-5-1 leñador salva a caperucita y abuela */
