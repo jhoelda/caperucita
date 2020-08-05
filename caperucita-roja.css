@@ -1217,9 +1217,17 @@ img[alt="cama2"]{
 100% { background-position:-1050px }
 
 }
-.loboenojado{
-    bottom:2px;
+#loboenojado{
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
     position: absolute;
+    z-index: 3;
+    bottom:350px;
+}
+
+.loboenojado{
+    position: absolute;
+    left: 570px;
     height: 295px;
     width: 210px;
     background: url(img/loboenojado.png);
@@ -1232,10 +1240,31 @@ img[alt="cama2"]{
 0% { background-position:0 }
 100% { background-position:-1000px } 
 }
+@keyframes walkstyle{
+    0%{
+        transform: translate(50px,-30px) scale(.9);
+    }
+    20%{
+        transform: translate(100px,-40px) scale(.7);
+    }
+    40%{
+        transform: translate(160px,-50px) scale(.5);
+    }
+    60%{
+        transform: translate(90px,-60px) scale(.4);
+    }
+    80%{
+        transform: translate(250px,-80px) scale(.3);
+    }
+    100%{
+        transform: translate(300px,-100px) scale(.3);
+    
+    }
+}
 
 @keyframes rotacion{
     from {transform: rotateZ(0deg);}
-    to {transform: rotateZ(360deg); }
+    to {transform: rotateZ(360deg);}
 }
 
 #sol{
@@ -1253,6 +1282,8 @@ img[alt="cama2"]{
     height:300px;
     top:100px;
     z-index:5;
+    animation-name: opacidad 1s linear 5s 1 normal forwards;
+
 }
 #arbustofondo{
     position: absolute;
@@ -1261,6 +1292,7 @@ img[alt="cama2"]{
     z-index: 3;
     left: 220px;
     height: 70px;
+    animation-name: opacidad 1s linear 5s 1 normal forwards;
 }
 #arbolito{
     height: 250px;
@@ -1276,6 +1308,7 @@ img[alt="cama2"]{
     width: 290px;
     top: 345px;
     z-index: 6;
+    animation-name: opacidad 1s linear 5s 1 normal forwards;
 }
 
 #caminata{
@@ -1285,7 +1318,7 @@ bottom: 10px;
 height: 220px;
 width: 200px;
 background: url(img/caminata.png);
-animation: walk .8s steps(5) infinite;
+animation: walk .8s steps(5) infinite, walkstyle 8s linear 5s 1 normal forwards;
 z-index:8;
 }
 
@@ -1295,6 +1328,7 @@ z-index:8;
     height: 40px;
     bottom: -55px;
     z-index:7;
+    animation-name: opacidad 1s linear 5s 1 normal forwards;
 }
 #margaritas {
     position: absolute;
@@ -1302,6 +1336,7 @@ z-index:8;
     left: 200px;
     height: 380px;
     z-index:2;
+    animation-name: opacidad 1s linear 5s 1 normal forwards;
 }
 #margaritas2{
     position: absolute;
@@ -1309,6 +1344,7 @@ z-index:8;
     height: 380px;
     right: 200px;
     z-index:1;
+    animation-name: opacidad 1s linear 5s 1 normal forwards;
 }
     
 
