@@ -1101,6 +1101,113 @@ img[alt="luna"]{
     opacity: 0;
     animation: opacidad 1s linear 5s 1 normal forwards;
 }
+
+/*Pag 2-3*/
+@keyframes caminata{
+
+    /* Primera viñeta del sprite sheet */
+0% { background-position:0 }
+/* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
+100% { background-position:-1050px }
+
+}
+.loboenojado{
+    bottom:2px;
+    position: absolute;
+    height: 295px;
+    width: 210px;
+    background: url(img/loboenojado.png);
+    animation: caminata .8s steps(5) infinite;
+}
+
+/*pag 3-3 */
+
+@keyframes walk {
+0% { background-position:0 }
+100% { background-position:-1000px } 
+}
+
+@keyframes rotacion{
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg); }
+}
+
+#sol{
+    position: absolute;
+    width: 100px;
+    left: 300px;
+    top: 60px; 
+    animation: rotacion .5s steps(8) infinite;
+    animation-name: opacidad 1s linear 5s 1 normal forwards;
+}
+#casa-3-3{
+    position: absolute;
+    right: 140px;
+    width: 700px;
+    height:300px;
+    top:100px;
+    z-index:5;
+}
+#arbustofondo{
+    position: absolute;
+    width: 750px;
+    top: 240px;
+    z-index: 3;
+    left: 220px;
+    height: 70px;
+}
+#arbolito{
+    height: 250px;
+    z-index: 4;
+    top: 110px;
+    position: absolute;
+    left:110px;
+}
+
+#caminito{
+    position: absolute;
+    left: 330px;
+    width: 290px;
+    top: 345px;
+    z-index: 6;
+}
+
+#caminata{
+position: absolute;
+left: 180px;
+bottom: 10px;
+height: 220px;
+width: 200px;
+background: url(img/caminata.png);
+animation: walk .8s steps(5) infinite;
+z-index:8;
+}
+
+#pastitos{
+    position: absolute;
+    width: 1200px;
+    height: 40px;
+    bottom: -55px;
+    z-index:7;
+}
+#margaritas {
+    position: absolute;
+    top: 235px;
+    left: 200px;
+    height: 380px;
+    z-index:2;
+}
+#margaritas2{
+    position: absolute;
+    top: 235px;
+    height: 380px;
+    right: 200px;
+    z-index:1;
+}
+    
+
+
+
 /* pag-5-1 leñador salva a caperucita y abuela */
 #leñador-5-1{
     background-image: url("img/leñador1.png");
