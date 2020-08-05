@@ -1083,6 +1083,7 @@ img[alt="cama2"]{
     animation: loboAparece 5s linear 5s 1 normal forwards;
 }
 
+
 #arbolc-1-2{
     position: absolute;
     height: 600px;
@@ -1208,6 +1209,17 @@ img[alt="cama2"]{
     animation: opacidad 1s linear 5s 1 normal forwards;
 }
 
+<<<<<<< HEAD
+#cama4-3{
+    position: absolute; 
+    width: 250px;
+    height: 220px;
+    top: 270px;
+    left:650px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+=======
 /*Pag 2-3*/
 @keyframes caminata{
 
@@ -1348,6 +1360,7 @@ z-index:8;
 }
     
 
+>>>>>>> 8924f51a5b7875250aaa51b2159025807e86f114
 
 
 /* pag-5-1 leñador salva a caperucita y abuela */
