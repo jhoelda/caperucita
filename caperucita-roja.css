@@ -169,6 +169,7 @@ section>a{
     font-weight: bold; 
     background-color: rgba(226, 225, 224, 0.3);
     padding: 0 2em;
+
 }
 
 /* tamaño del libro en la grilla - al final borrar el border*/
@@ -422,16 +423,49 @@ img[alt="camino"]:hover,img[alt="flor"]:hover{
     z-index: 1;
 }
 /* CAMINO 3-1*/
+.uno{
+    opacity: 0;
+    animation: opacidad 1s linear 10s 1 normal forwards;
+    
+}
+.dos{
+    opacity: 0;
+    animation: opacidad 1s linear 12s 1 normal forwards;
+    
+}
+.tres{
+    opacity: 0;
+    animation: opacidad 1s linear 14s 1 normal forwards;
+    
+}
+.cuatro{
+    opacity: 0;
+    animation: opacidad 1s linear 16s 1 normal forwards;
+    
+}
+.cinco{
+    opacity: 0;
+    animation: opacidad 1s linear 18s 1 normal forwards;
+    
+}
+.seis{
+    opacity: 0;
+    animation: opacidad 1s linear 20s 1 normal forwards;
+    
+}
 
 img[alt="orejaslobo"]{
     position: absolute;
     z-index: 2; 
-    width: 68px;
-    height: 40px;
+    width: 69px;
+    height: 42px;
     top: 270px;
-    left:687px;
+    left:685px;
     opacity: 0;
-    animation: opacidad 3s linear 8s 1 normal forwards;
+    transform: scale(1.4);
+    transition: 3s;
+    transition-duration: 2s;
+    animation: opacidad 1s linear 14s 1 normal ;
 }
 img[alt="ojoslobo"]{
     position: absolute;
@@ -441,13 +475,22 @@ img[alt="ojoslobo"]{
     top: 292px;
     left:706px;
     opacity: 0;
-    animation: opacidad 3s linear 8s 1 normal forwards;
-
-    
-}
-img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
-    transform: scale(1.2);
+    animation: opacidad 1s linear 8s 1 normal forwards;  
     transition: 1.5s;
+}
+
+.ojos-grandes{
+    position: absolute;
+    z-index: 2;  
+    width: 50px;
+    height: 40px;
+    top: 292px;
+    left:706px;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: 1s;
+    transition-duration: 2s;
+    animation: opacidad 1s linear 18s 1 normal ;  
 }
 #cap-3-1{
     position: absolute;
@@ -457,6 +500,34 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
     top: 320px;
     left: 400px;
     background-size: cover;
+}
+img[alt="placar"]{
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    top: 270px;
+    left: 430px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;  
+
+}
+a[ href="#pag-4-1"]{
+    position: absolute;
+    top: 440px;
+    left: 400px;
+    width: 100px;
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    animation: opacidad 1s linear 20s 1 normal forwards; 
+    border-radius: 20px; 
+
+}
+a[ href="#pag-4-1"]:hover{
+    background-color: rgba(0,0,0,0.7);
+    border: 1px solid white;
+
 }
 /*CAPERUCITA CAMINA TIPICA ESCENA*/
 @keyframes caminaCaperucita{
@@ -498,43 +569,6 @@ img[alt="orejaslobo"]:hover,img[alt="ojoslobo"]:hover{
 
 /*ESTILOS 4-1 YENNY Y LUZ*/
 #pag-4-1{background-color:#252555;}
-
-img[alt="cabaña1"]{
-    position: absolute;
-    width: 900px;
-    height:450px;
-    top: 100px;
-    left: 140px;
-    opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
-}
-img[alt="cap-asus"]{
-    position: absolute; 
-    width: 100px;
-    height: 160px;
-    top: 330px;
-    left:400px;
-    opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
-}
-img[alt="cama"]{
-    position: absolute;
-    top: 330px;
-    left:680px;
-    width: 250px;
-    height: 170px;
-    opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
-}
-img[alt="lobomalo"]{
-    position: absolute; 
-    width: 180px;
-    height: 270px;
-    top: 240px;
-    left:500px;
-    opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
-}
 img[alt="arbusto2"]{
     position: absolute;
     top: 490px;
@@ -562,6 +596,78 @@ img[alt="luna"]{
 
 }
 
+img[alt="cabaña1"]{
+    position: absolute;
+    width: 900px;
+    height:450px;
+    top: 100px;
+    left: 140px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+img[alt="cap-asus"]{
+    position: absolute; 
+    width: 100px;
+    height: 160px;
+    top: 330px;
+    left:400px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+#cama{
+    position: absolute;
+    z-index: 2;
+    top: 250px;
+    left:590px;
+    width: 280px;
+    height: 240px;
+    background-size: cover;
+}
+@keyframes cama{
+    0%{
+        background-image: url("img/lobo_abuela.png");
+    }
+    25%{
+        background-image: url("img/lobo_abuela.png");   
+    }
+    50%{
+        background-image: url("img/camaabuela.png");
+    }
+}
+.cama-abuela{animation: cama 10s linear 5s 1 normal forwards;}
+img[alt="cama2"]{
+    position: absolute;
+    z-index: 2;
+    top:250px;
+    left:598px;
+    width: 305px;
+    height: 265px;
+    opacity: 0;
+    animation: opacidad 1s linear 10s 1 normal forwards;
+
+}
+
+.lobo-ataca{
+    position: absolute;
+    top: 330px;
+    left:0px;
+    width: 250px;
+    height: 170px;
+    background-size: cover;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+
+.caperucita-asustada{
+    position: absolute;
+    top: 330px;
+    left:380px;
+    width: 250px;
+    height: 170px;
+    background-size: cover;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
 /* cada animacion de pagina separenlo con un titulo */
 
 
