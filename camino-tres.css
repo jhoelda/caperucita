@@ -5,6 +5,10 @@
     to{opacity: 1;}
 }
 /* Pag 1-3 */
+#pag-1-3:target .cap-2-2{
+    animation: caminataCaperucita 6s linear 1s 1 normal forwards;
+}
+
 #lobo-1-3{
     position: absolute;
     z-index: 3;
@@ -184,6 +188,74 @@
     animation: opacidad 1s linear 1s 1 normal forwards;
 }
 /*pag 4-3*/
+#pag-4-3:target img[alt="cabaña1"]{
+    position: absolute;
+    width: 900px;
+    height:450px;
+    top: 100px;
+    left: 140px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+
+#pag-4-3:target img[alt="arbusto2"]{
+    position: absolute;
+    top: 490px;
+    left: 0px;
+    width: 1170px;
+    height: 100px;
+    z-index: 2;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+
+#pag-4-3:target img[alt="orejaslobo"]{
+    position: absolute;
+    z-index: 2; 
+    width: 69px;
+    height: 42px;
+    top: 270px;
+    left:685px;
+    opacity: 0;
+    transform: scale(1.4);
+    transition: 3s;
+    transition-duration: 2s;
+    animation: opacidad 1s linear 5s 1 normal ;
+}
+#pag-4-3:target img[alt="ojoslobo"]{
+    position: absolute;
+    z-index: 2;  
+    width: 50px;
+    height: 40px;
+    top: 292px;
+    left:706px;
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;  
+    transition: 1.5s;
+}
+#pag-4-3:target .ojos-grandes{
+    position: absolute;
+    z-index: 2;  
+    width: 50px;
+    height: 40px;
+    top: 292px;
+    left:706px;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: 1s;
+    transition-duration: 2s;
+    animation: opacidad 1s linear 5s 1 normal ;  
+}
+#pag-4-3:target img[alt="placar"]{
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    top: 270px;
+    left: 430px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;  
+
+}
 
 #pag-4-3:target #cama4-3{
     position: absolute; 
@@ -196,6 +268,7 @@
     animation: opacidad 1s linear 5s 1 normal forwards;
     
 }
+
 #pag-5-3:target #cama4-3{
     position: absolute; 
     width: 250px;
@@ -204,11 +277,11 @@
     left:650px;
     z-index: 0;
     opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
+    animation: opacidad 1s linear 1s 1 normal forwards;
     
 }
 
-.lobo4-3{
+#pag-4-3:target .lobo4-3{
     position: absolute;
     width: 250px;
     height: 220px;
@@ -216,9 +289,8 @@
     left: 650px;
     z-index:1;
     animation-name: camaseva;
-    animation-duration: 33s;
+    animation-duration: 20s;
     animation-fill-mode:both;
-  
 }
 @keyframes camaseva{
     0%{
@@ -279,17 +351,17 @@
         background-image: url("img/caminataotrolado.png");
     }
 }
-.cap-4-3{animation: caminaCaperucita2 6s linear 5s 1 normal forwards;}
+#pag-4-3:target .cap-4-3{animation: caminaCaperucita2 6s linear 5s 1 normal forwards;}
 
 
-.loboenojado2{
+#pag-4-3:target .loboenojado2{
     bottom:2px;
     position: absolute;
     left: 500px;
     height: 295px;
     width: 210px;
     background: url(img/loboenojado.png);
-    animation: opacidad 100s, caminata2 .8s steps(5) infinite;
+    animation: opacidad 50s, caminata2 .8s steps(5) infinite;
     z-index: 1;
     top: 250px;
 }
@@ -433,6 +505,12 @@
     animation: opacidad 1s linear 1s 1 normal forwards;
 }
 /* animaciones */
+@keyframes caminata2{
+    0% { background-position:0 }
+    
+    100% { background-position:-1050px }
+    
+    }
 @keyframes caminata{
 0% { background-position:0 }
 /* El tamaño total de ancho del sprite. Es negativo para que no "camine" hacia atrás */
@@ -488,7 +566,7 @@
     height: 295px;
     width: 210px;
     background: url(img/loboenojado.png);
-    animation: caminata .9s steps(5) infinite;
+    animation: walk .9s steps(5) infinite;
 }
 
 #humo{
@@ -624,6 +702,28 @@ z-index:8;
     animation-name: opacidad 1s linear 5s 1 normal forwards;
 }
 /*pag 5-3 lobo escapa */
+#pag-5-3:target img[alt="cabaña1"]{
+    position: absolute;
+    width: 900px;
+    height:450px;
+    top: 100px;
+    left: 140px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+
+#pag-5-3:target img[alt="arbusto2"]{
+    position: absolute;
+    top: 490px;
+    left: 0px;
+    width: 1170px;
+    height: 100px;
+    z-index: 2;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+
+#pag-5-3:target .cap-3-1{animation: opacidad 1s, caminaCaperucita 6s linear 3s 1 normal forwards;}
 #fin{
     position: absolute;
     top: 170px;
@@ -640,7 +740,12 @@ z-index:8;
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
+
 }
+#pag-5-3:target #leñador-5-3{
+    animation: opacidad 1s, leñadorCasa 25s linear 5s 1 normal forwards;
+}
+
 #abuela-5-3{
     /* background-image: url("img/abuela1.png"); */
     position: absolute;
@@ -653,8 +758,11 @@ z-index:8;
     background-repeat: no-repeat;
     z-index: 2;
 }
+#pag-5-3:target #abuela-5-3{
+    animation: opacidad 1s, abuelaSale 10s linear 14s 1 normal forwards;
+}
 
-.loboenojado3{
+#pag-5-3:target .loboenojado3{
     position: absolute;
     top: 300px;
     left: 10px;
@@ -663,120 +771,20 @@ z-index:8;
     background: url(img/loboenojado.png);
     animation: opacidad 30s, caminata2 .9s steps(5) infinite;
 }
+#pag-5-3:target img[alt="placar"]{
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    top: 270px;
+    left: 430px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;  
+
+}
 
 
-
-/* pag-5-1 leñador salva a caperucita y abuela */
 #pag-5-3, #pag-4-3 {
     background-color:#252555;
-}
-#leñador-5-1, #cap-5-1, #abuela-5-1{
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 2;
-}
-#leñador-5-1{
-    /* background-image: url("img/leñador1.png"); */
-    position: absolute;
-    width: 300px;
-    height: 200px;
-    bottom: 70px;
-    left: 300px;
-    transform-origin: bottom;
-}
-#cap-5-1{
-    /* background-image: url("img/caperucita.png"); */
-    position: absolute;
-    z-index: 2;
-    width: 150px;
-    height: 150px;
-    bottom: 70px;
-    left: 300px;
-}
-#abuela-5-1{
-    /* background-image: url("img/abuela1.png"); */
-    position: absolute;
-    z-index: 2;
-    width: 300px;
-    height: 200px;
-    bottom: 70px;
-    left: 400px;
-}
-@keyframes leñadorCasa{
-    0%{
-        background-image: url("img/leñador7.png");
-    }
-    10%{
-        transform: translate(100px, -40px);
-        background-image: url("img/leñador3.png");
-    }
-    20%{
-        transform: translate(200px, -40px) scaleY(1.1);
-        background-image: url("img/leñador5.png");
-    }
-    30%{
-        transform: translate(300px, -40px);
-        background-image: url("img/leñador10.png");
-    }
-    40%{
-        transform: translate(250px, -40px);
-        background-image: url("img/leñador11.png");
-    }
-    50%{
-        transform: translate(300px, -40px);
-        background-image: url("img/leñador10.png");
-    }
-    60%{
-        transform: translate(250px, -40px);
-        background-image: url("img/leñador11.png");
-    }
-    70%{
-        transform: translate(300px, -40px);
-        background-image: url("img/leñador12.png");
-    }
-    80%{
-        transform: translate(300px, -40px) ;
-        background-image: url("img/leñador3.png");
-    }
-    90%{
-        transform: translate(180px, -30px) ;
-        background-image: url("img/leñador3.png");
-    }
-    100%{
-        transform: translate(180px, -30px) ;
-        background-image: url("img/leñador4.png");
-    }
-}
-.leñador-5-1{
-    animation: leñadorCasa 25s linear 5s 1 normal forwards;
-}
-@keyframes abuelaSale{
-    0%{
-        background-image: url("img/abuela1.png");
-    }
-    30%{
-        background-image: url("img/abuela2.png")
-    }
-    70%{
-        background-image: url("img/abuela5.png")
-    }
-    100%{
-        background-image: url("img/abuela4.png");
-    }
-}
-.abuela-5-1{
-    animation: abuelaSale 15s linear 14s 1 normal forwards;
-}
-@keyframes capSale{
-    0%{
-        background-image: url("img/caperucita-sorprendida.png");
-    }
-    100%{
-        background-image: url("img/caperucita.png");
-    }
-}
-.cap-5-1{
-    animation: capSale 5s linear 19s 1 normal forwards;
 }
 
 

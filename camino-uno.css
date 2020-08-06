@@ -178,19 +178,7 @@
     transition-duration: 2s;
     animation: opacidad 1s linear 14s 1 normal ;
 }
-#pag-4-3:target img[alt="orejaslobo"]{
-    position: absolute;
-    z-index: 2; 
-    width: 69px;
-    height: 42px;
-    top: 270px;
-    left:685px;
-    opacity: 0;
-    transform: scale(1.4);
-    transition: 3s;
-    transition-duration: 2s;
-    animation: opacidad 1s linear 5s 1 normal ;
-}
+
 
 
 #pag-3-1:target img[alt="ojoslobo"]{
@@ -204,17 +192,7 @@
     animation: opacidad 1s linear 8s 1 normal forwards;  
     transition: 1.5s;
 }
-#pag-4-3:target img[alt="ojoslobo"]{
-    position: absolute;
-    z-index: 2;  
-    width: 50px;
-    height: 40px;
-    top: 292px;
-    left:706px;
-    opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;  
-    transition: 1.5s;
-}
+
 
 #pag-3-1:target .ojos-grandes{
     position: absolute;
@@ -229,19 +207,7 @@
     transition-duration: 2s;
     animation: opacidad 1s linear 18s 1 normal ;  
 }
-#pag-4-3:target .ojos-grandes{
-    position: absolute;
-    z-index: 2;  
-    width: 50px;
-    height: 40px;
-    top: 292px;
-    left:706px;
-    opacity: 0;
-    transform: scale(1.5);
-    transition: 1s;
-    transition-duration: 2s;
-    animation: opacidad 1s linear 5s 1 normal ;  
-}
+
 #cap-3-1{
     position: absolute;
     z-index: 2;
@@ -261,16 +227,7 @@
     animation: opacidad 1s linear 1s 1 normal forwards;  
 
 }
-#pag-4-3:target img[alt="placar"]{
-    height: 150px;
-    width: 100px;
-    position: absolute;
-    top: 270px;
-    left: 430px;
-    opacity: 0;
-    animation: opacidad 1s linear 1s 1 normal forwards;  
 
-}
 #pag-4-1:target img[alt="placar"]{
     height: 150px;
     width: 100px;
@@ -323,7 +280,6 @@ a[ href="#pag-4-1"]:hover{
     }
 }
 #pag-3-1:target .cap-3-1{animation: caminaCaperucita 6s linear 3s 1 normal forwards;}
-#pag-5-3:target .cap-3-1{animation: opacidad 1s, caminaCaperucita 6s linear 3s 1 normal forwards;}
 #pag-4-2:target .cap-3-1{animation: opacidad 1s, caminaCaperucita 6s linear 3s 1 normal forwards;}
 #pag-3-1:target #loboAbu{
     position: absolute;
@@ -364,16 +320,7 @@ a[ href="#pag-4-1"]:hover{
     opacity: 0;
     animation: opacidad 1s linear 1s 1 normal forwards;
 }
-#pag-4-3:target img[alt="arbusto2"]{
-    position: absolute;
-    top: 490px;
-    left: 0px;
-    width: 1170px;
-    height: 100px;
-    z-index: 2;
-    opacity: 0;
-    animation: opacidad 1s linear 1s 1 normal forwards;
-}
+
 #pag-4-2:target img[alt="arbusto2"]{
     position: absolute;
     top: 490px;
@@ -385,16 +332,6 @@ a[ href="#pag-4-1"]:hover{
     animation: opacidad 1s linear 1s 1 normal forwards;
 }
 #pag-3-1:target img[alt="arbusto2"]{
-    position: absolute;
-    top: 490px;
-    left: 0px;
-    width: 1170px;
-    height: 100px;
-    z-index: 2;
-    opacity: 0;
-    animation: opacidad 1s linear 1s 1 normal forwards;
-}
-#pag-5-3:target img[alt="arbusto2"]{
     position: absolute;
     top: 490px;
     left: 0px;
@@ -420,15 +357,7 @@ img[alt="luna"]{
     height: 100px;
 
 }
-#pag-5-3:target img[alt="cabaña1"]{
-    position: absolute;
-    width: 900px;
-    height:450px;
-    top: 100px;
-    left: 140px;
-    opacity: 0;
-    animation: opacidad 1s linear 1s 1 normal forwards;
-}
+
 
 #pag-4-1:target img[alt="cabaña1"]{
     position: absolute;
@@ -439,15 +368,7 @@ img[alt="luna"]{
     opacity: 0;
     animation: opacidad 1s linear 1s 1 normal forwards;
 }
-#pag-4-3:target img[alt="cabaña1"]{
-    position: absolute;
-    width: 900px;
-    height:450px;
-    top: 100px;
-    left: 140px;
-    opacity: 0;
-    animation: opacidad 1s linear 1s 1 normal forwards;
-}
+
 #pag-4-2:target img[alt="cabaña1"]{
     position: absolute;
     width: 900px;
