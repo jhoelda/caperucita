@@ -1,0 +1,608 @@
+/* ESTILOS ESCENAS MAGA Y JHOELDA */
+/* cada animacion de pagina separenlo con un titulo */
+/* pag-2-2 se encuentra con el lobo y eleccion camino corto o camino largo */
+/* #animacion-2-2{
+    perspective: 500px;
+} */
+#pag-2-2:target #cam-amarillo2{
+    position: absolute;
+    z-index: 1;
+    width: 90vw;
+    height: 400px;
+    left: -50px;
+    bottom: -60px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+#pag-2-2:target #arbusto2-2-2{
+    position: absolute;
+    z-index: 1;
+    width: 700px;
+    height: 100px;
+    left: 130px;
+    top: 45vh;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+#pag-2-2:target #arbolB-2-2{
+    position: absolute;
+    z-index: 2;
+    width: 450px;
+    bottom: 120px;
+    left: 50%;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+#pag-2-2:target #arbol2-2-2{
+    position: absolute;
+    z-index: 0;
+    width: 300px;
+    top: 50px;
+    left: 20%;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+#pag-1-3:target #arbol2-2-2{
+    position: absolute;
+    z-index: 0;
+    width: 300px;
+    top: 50px;
+    left: 20%;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+@keyframes opacidad{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#cap-2-2{
+    position: absolute;
+    z-index: 2;
+    width: 120px;
+    height: 200px;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+}
+#lobo-2-2{
+    position: absolute;
+    z-index: 3;
+    width: 200px;
+    height: 280px;
+    bottom: 0;
+    right: 0;
+    background-size: contain;
+}
+@keyframes caminataCaperucita{
+    0%{
+        transform: translateX(0);
+        background-image: url("img/caminata1.png");
+    }
+    25%{
+        transform: translateX(100px) translateY(-20px);
+        background-image: url("img/caminata3.png");
+    }
+    50%{
+        transform: translateX(200px);
+        background-image: url("img/caminata1.png");
+    }
+    75%{
+        transform: translateX(300px) translateY(-20px);
+        background-image: url("img/caminata3.png");
+    }
+    100%{
+        transform: translateX(400px);
+        background-image: url("img/caperucita-sorprendida.png");
+    }
+}
+#pag-2-2:target .cap-2-2{
+    animation: caminataCaperucita 6s linear 1s 1 normal forwards;
+}
+#pag-1-3:target .cap-2-2{
+    animation: caminataCaperucita 6s linear 1s 1 normal forwards;
+}
+
+@keyframes loboAparece1{
+    0%{
+        transform: translate(-150px,-100px) scale(.6);
+        background-image: url("img/lobo3.png");
+    }
+    25%{
+        transform: translate(-80px,-50px) scale(.8);
+        background-image: url("img/lobo3.png");
+    }
+    50%{
+        transform: translateX(-150px);
+        background-image: url("img/lobo2.png");
+    }
+    75%{
+        transform: translateX(-300px);
+        background-image: url("img/lobo1.png");
+    }
+    100%{
+        transform: translateX(-400px);
+        background-image: url("img/lobo2.png");
+    }
+}
+/* @keyframes loboHabla{
+    from{
+        background-image: url("img/lobo1.png");
+    }
+    to{
+        background-image: url("img/lobo2.png");
+    }
+} */
+#pag-2-2:target .lobo-2-2{
+    animation: loboAparece1 5s linear 1s 1 normal forwards;
+}
+/* .lobo-2-2:hover{
+    animation: loboHabla 1s linear 1s infinite normal backwards;
+} */
+/* cartel de opciones pagina2-2 */
+#pag-2-2:target #cartel{
+    background-image: url("img/cartel2.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    width: 180px;
+    height: 200px;
+    bottom: 70px;
+    right: 30px;
+    background-size: cover;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+#cartel:hover{
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+.lightbox{
+    display: none;
+}
+.lightbox:target{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+.lightbox .cartelbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.363);
+    background-image: url("img/cartel2.png");
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+    z-index: 4;
+}
+.lightbox .cartelbox a{
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+    width: 8em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+#camLargo{
+    margin-top: 120px;
+    transform: rotate(9deg);
+}
+#camCorto{
+    margin-top: 60px;
+    transform: rotate(-10deg) translateX(30px);
+}
+.lightbox .close::after{
+    position: absolute;
+    right: calc(((100% - 600px) / 2) - 1em);
+    top: calc(((100% - 600px) / 2) - 1em);
+    width: 2em;
+    height: 2em;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EB1200;
+    color: white;
+    content: "x";
+    cursor: pointer;
+    border-radius: 50%;
+    border: .3em solid white;
+}
+.lightbox .close::before{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .6);
+    content: "";
+    cursor: default;
+}
+
+/* pag-3-2 caperucita entra a la casa */
+.imagenes{
+    perspective: 500px;
+}
+#pag-3-2:target #casa-3-2{
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+    width: 900px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+#pag-5-2:target #casa-3-2{
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+    width: 900px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+
+#pag-3-2:target #puerta-3-2{
+    position: absolute;
+    right: 570px;
+    bottom: 202px;
+    width: 62px;
+    opacity: 0;
+    transform: rotateY(-30deg);
+    transform-origin: left;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+    z-index: 2;
+}
+#pag-5-2:target #puerta-3-2{
+    position: absolute;
+    right: 570px;
+    bottom: 202px;
+    width: 62px;
+    opacity: 0;
+    transform: rotateY(-30deg);
+    transform-origin: left;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+    z-index: 2;
+}
+#puerta-3-2:hover{
+    transform: rotateY(-50deg);
+    transform-origin: left;
+}
+#pag-3-2:target #camino-3-2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 700px;
+    height: 200px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+    z-index: 1;
+}
+#pag-5-2:target #camino-3-2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 700px;
+    height: 200px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+    z-index: 1;
+}
+#cap-3-2{
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    bottom: 70px;
+    left: 0;
+    background-size: contain;
+    z-index: 2;
+}
+@keyframes caminataCasa{
+    0%{
+        transform: translate(50px,-30px) scale(.7);
+        background-image: url("img/caminata1.png");
+    }
+    20%{
+        transform: translate(160px,-40px) scale(.6);
+        background-image: url("img/caminata3.png");
+    }
+    40%{
+        transform: translate(270px,-30px) scale(.5);
+        background-image: url("img/caminata1.png");
+    }
+    60%{
+        transform: translate(380px,-25px) scale(.4);
+        background-image: url("img/caminata3.png");
+    }
+    80%{
+        transform: translate(430px,-25px) scale(.3);
+        background-image: url("img/caminata1.png");
+    }
+    100%{
+        transform: translate(450px,-25px) scale(.3);
+        background-image: url("img/caperucita2.png");
+    }
+}
+#pag-3-2:target .cap-3-2{
+    animation: caminataCasa 8s linear 1s 1 normal forwards;
+}
+#pag-2-1:target .cap-3-2{
+    animation: caminataCasa 8s linear 1s 1 normal forwards;
+}
+#pag-5-2:target .cap-3-2{
+    animation: caminataCasa 8s linear 1s 1 normal forwards;
+}
+
+/* pag-5-2 leñador aparece y entra a la casa */
+/* casa y camino la misma que la pag-3-2 */
+#leñador-5-2{
+    /* background-image: url("img/leñador1.png"); */
+    position: absolute;
+    width: 160px;
+    height: 200px;
+    bottom: 70px;
+    left: 0;
+    background-size: cover;
+    z-index: 2;
+}
+#grito1-5-2{
+    /* background-image: url("img/grito1.png"); */
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    bottom: 260px;
+    right: 600px;
+    background-size: contain;
+    z-index: 1;
+}
+@keyframes caminataCasaLeñador{
+    0%{
+        transform: translate(50px,-30px) scale(.9);
+        background-image: url("img/leñador1.png");
+    }
+    20%{
+        transform: translate(160px,-40px) scale(.8);
+        background-image: url("img/leñador1.png");
+    }
+    40%{
+        transform: translate(270px,-30px) scale(.8);
+        background-image: url("img/leñador4.png");
+    }
+    60%{
+        transform: translate(380px,-25px) scale(.7);
+        background-image: url("img/leñador7.png");
+    }
+    80%{
+        transform: translate(430px,-25px) scale(.6);
+        background-image: url("img/leñador7.png");
+    }
+    100%{
+        transform: translate(450px,-25px) scale(.6);
+        background-image: url("img/leñador7.png");
+    }
+}
+#pag-5-2:target .leñador-5-2{
+    animation: caminataCasaLeñador 6s linear 1s 1 normal forwards;
+}
+@keyframes grito{
+    0%{
+        transform: scaleX(1.5);
+        background-image: url("img/grito1.png");
+    }
+    25%{
+        transform: scaleX(2.25) rotate(30deg);
+        background-image: url("img/grito1.png");
+    }
+    50%{
+        transform: scaleX(3);
+        background-image: url("img/grito1.png");
+    }
+    75%{
+        transform: scaleX(2.25) rotate(-15deg);
+        background-image: url("img/grito1.png");
+    }
+    100%{
+        transform: scaleX(1.5);
+        background-image: url("img/grito1.png");
+        opacity: 0;
+    }
+}
+#pag-5-2:target .grito1-5-2{
+    animation: grito 2s linear 5s 3 normal forwards;
+    transform-origin: right;
+}
+/* pag-5-1 leñador salva a caperucita y abuela */
+#leñador-5-1, #cap-5-1, #abuela-5-1{
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+#leñador-5-1{
+    /* background-image: url("img/leñador1.png"); */
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    bottom: 70px;
+    left: 300px;
+    transform-origin: bottom;
+}
+#cap-5-1{
+    /* background-image: url("img/caperucita.png"); */
+    position: absolute;
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+    bottom: 70px;
+    left: 300px;
+}
+#abuela-5-1{
+    /* background-image: url("img/abuela1.png"); */
+    position: absolute;
+    z-index: 2;
+    width: 300px;
+    height: 200px;
+    bottom: 70px;
+    left: 400px;
+}
+#pag-5-1:target #loboCama{
+    position: absolute;
+    z-index: 2; 
+    width: 250px;
+    height: 220px;
+    top: 270px;
+    left:650px;
+    background-size: cover;
+    background-image: url("img/loboDormido.png");
+    opacity: 0;
+    animation: opacidad 1s linear 5s 1 normal forwards;
+}
+@keyframes leñadorCasa{
+    0%{
+        background-image: url("img/leñador7.png");
+    }
+    10%{
+        transform: translate(100px, -40px);
+        background-image: url("img/leñador3.png");
+    }
+    20%{
+        transform: translate(200px, -40px) scaleY(1.1);
+        background-image: url("img/leñador5.png");
+    }
+    30%{
+        transform: translate(300px, -40px);
+        background-image: url("img/leñador10.png");
+    }
+    40%{
+        transform: translate(250px, -40px);
+        background-image: url("img/leñador11.png");
+    }
+    50%{
+        transform: translate(300px, -40px);
+        background-image: url("img/leñador10.png");
+    }
+    60%{
+        transform: translate(250px, -40px);
+        background-image: url("img/leñador11.png");
+    }
+    70%{
+        transform: translate(300px, -40px);
+        background-image: url("img/leñador12.png");
+    }
+    80%{
+        transform: translate(300px, -40px) ;
+        background-image: url("img/leñador3.png");
+    }
+    90%{
+        transform: translate(180px, -30px) ;
+        background-image: url("img/leñador3.png");
+    }
+    100%{
+        transform: translate(180px, -30px) ;
+        background-image: url("img/leñador4.png");
+    }
+}
+#pag-5-1:target .leñador-5-1{
+    animation: leñadorCasa 25s linear 5s 1 normal forwards;
+}
+@keyframes abuelaSale{
+    0%{
+        background-image: url("img/abuela1.png");
+    }
+    30%{
+        background-image: url("img/abuela2.png")
+    }
+    70%{
+        background-image: url("img/abuela5.png")
+    }
+    100%{
+        background-image: url("img/abuela4.png");
+    }
+}
+#pag-5-1:target .abuela-5-1{
+    animation: abuelaSale 15s linear 14s 1 normal forwards;
+}
+@keyframes capSale{
+    0%{
+        background-image: url("img/caperucita-sorprendida.png");
+    }
+    100%{
+        background-image: url("img/caperucita.png");
+    }
+}
+#pag-5-1:target.cap-5-1{
+    animation: capSale 5s linear 19s 1 normal forwards;
+}
+/*pag 4-2*/
+#pag-4-2:target img[alt="orejaslobo"]{
+    position: absolute;
+    z-index: 2; 
+    width: 69px;
+    height: 42px;
+    top: 270px;
+    left:685px;
+    opacity: 0;
+    transform: scale(1.4);
+    transition: 3s;
+    transition-duration: 2s;
+    animation: opacidad 1s linear 14s 1 normal ;
+}
+#pag-4-2:target img[alt="ojoslobo"]{
+    position: absolute;
+    z-index: 2;  
+    width: 50px;
+    height: 40px;
+    top: 292px;
+    left:706px;
+    opacity: 0;
+    animation: opacidad 1s linear 8s 1 normal forwards;  
+    transition: 1.5s;
+}
+#pag-4-2:target .ojos-grandes{
+    position: absolute;
+    z-index: 2;  
+    width: 50px;
+    height: 40px;
+    top: 292px;
+    left:706px;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: 1s;
+    transition-duration: 2s;
+    animation: opacidad 1s linear 18s 1 normal ;  
+}
+#pag-4-2:target img[alt="placar"]{
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    top: 270px;
+    left: 430px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;  
+
+}
+#pag-5-3:target img[alt="placar"]{
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    top: 270px;
+    left: 430px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;  
+
+}
+
+#pag-4-2{
+    background-color: #252555;
+}
+
+
+
+/* ----------------------------------------------------------- */
