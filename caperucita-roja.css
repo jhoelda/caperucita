@@ -260,6 +260,13 @@ section>a{
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+    background-color:#50940e;border:1px solid #3f7807;
+    color: white;
+    text-transform: uppercase;
+    font-family:Helvetica Neue, Arial, Helvetica, Verdana, sans-serif;
+	border-radius: 5px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.25);
+    text-shadow:0 -3px 3px rgba(0,0,0,0.25)
 }
 
 /* estilo de imagenes */
