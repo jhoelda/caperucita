@@ -369,26 +369,17 @@
     }
 
     @keyframes walkstyle{
-        0%{
-            transform: translatex(100px);
+        from {
+            transform: translatex(0px);
         }
-        30%{
-            transform: translatex(250px);
-        }
-        70%{
-            transform: translatex(500px);
-        }
-        99%{
-            transform: translateX(800px);
-        }
-        100%{ transform: translateX(1600px);
+        to{
+            transform: translateX(1200px);
         }
 
     }
 
 #loboenojado{
-    opacity: 0;
-    animation: opacidad 1s linear 2s 1 normal forwards;
+    animation: opacidad 1s linear 1s normal forwards;
     position: absolute;
     z-index: 3;
     bottom:350px;
@@ -409,34 +400,41 @@
     height: 150px;
     width: 300px;
     background: url(img/enojo.png);
-    animation: opacidad 1s linear 2s 1 normal forwards, humo .9s steps(3) infinite;
+    animation: humo .9s steps(3) infinite;
     
+}
+#pag-2-3:target #caperucita{
+    position: absolute;
+    left: 180px;
+    bottom: 150px;
+    animation-name: walkstyle;
+    animation-duration: 8s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    transition-timing-function: linear;
+    animation-fill-mode: forwards;
+    z-index: 10;
+
 }
 
 .caperucitacorriendo{
-    opacity:0;
     position: absolute;
-    left: 180px;
-    bottom: 10px;
     height: 220px;
     width: 200px;
     background: url(img/caminata.png);
-    animation:  opacidad 1s linear 2s 1 normal forwards, walk .9s steps(5) infinite, walkstyle 3s linear 8s 1 forwards;
-    z-index: 10;
-
+    animation:  opacidad 1s linear 1s 1 normal forwards, walk .9s steps(5) infinite;
+    z-index: 1;
     }
 
     .floresvolando{
-        z-index: 11;
-        opacity:0;
+        z-index: 2;
         position: absolute;
-        left: 240px;
-        bottom:40px;
+        left: 70px;
+        bottom:-190px;
         height: 100px;
         width: 100px;
         background: url(img/caminoflores.png);
-        animation:opacidad 1s linear 2s 1 normal forwards, vuelo .8s steps(5) infinite,walkstyle 3s linear 8s 1 forwards;
-
+        animation:opacidad 1s linear 1s 1 normal forwards, vuelo .8s steps(5) infinite;
     }
 
 /*pag 3-3 */
