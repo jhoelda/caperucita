@@ -165,6 +165,31 @@
 }
 /* CAMINO 3-1*/
 
+#pag-3-1:target #uno{
+    opacity: 0;
+    animation: opacidad 1s linear 8s 1 normal forwards;
+}
+#pag-3-1:target #dos{
+    opacity: 0;
+    animation: opacidad 1s linear 10s 1 normal forwards;
+}
+#pag-3-1:target #tres{
+    opacity: 0;
+    animation: opacidad 1s linear 12s 1 normal forwards;
+}
+#pag-3-1:target #cuatro{
+    opacity: 0;
+    animation: opacidad 1s linear 14s 1 normal forwards;
+}
+#pag-3-1:target #cinco{
+    opacity: 0;
+    animation: opacidad 1s linear 16s 1 normal forwards;
+}
+#pag-3-1:target #seis{
+    opacity: 0;
+    animation: opacidad 1s linear 18s 1 normal forwards; 
+}
+
 #pag-3-1:target img[alt="orejaslobo"]{
     position: absolute;
     z-index: 2; 
@@ -173,13 +198,10 @@
     top: 270px;
     left:685px;
     opacity: 0;
-    transform: scale(1.4);
-    transition: 3s;
-    transition-duration: 2s;
-    animation: opacidad 1s linear 14s 1 normal ;
+    transform: scale(1.2);
+    animation: opacidad 1s linear 12s 1 normal ;
+    animation-iteration-count: 2;
 }
-
-
 
 #pag-3-1:target img[alt="ojoslobo"]{
     position: absolute;
@@ -190,7 +212,6 @@
     left:706px;
     opacity: 0;
     animation: opacidad 1s linear 8s 1 normal forwards;  
-    transition: 1.5s;
 }
 
 
@@ -203,9 +224,8 @@
     left:706px;
     opacity: 0;
     transform: scale(1.5);
-    transition: 1s;
-    transition-duration: 2s;
-    animation: opacidad 1s linear 18s 1 normal ;  
+    animation: opacidad 1s linear 16s 1 normal ;  
+    animation-iteration-count: 2;
 }
 
 #cap-3-1{
@@ -238,24 +258,7 @@
     animation: opacidad 1s linear 1s 1 normal forwards;  
 
 }
-#pag-3-1:target a[ href="#pag-4-1"]{
-    position: absolute;
-    top: 440px;
-    left: 400px;
-    width: 100px;
-    background-color: rgba(0,0,0,0.4);
-    color: white;
-    font-size: 20px;
-    opacity: 0;
-    animation: opacidad 1s linear 20s 1 normal forwards; 
-    border-radius: 20px; 
 
-}
-a[ href="#pag-4-1"]:hover{
-    background-color: rgba(0,0,0,0.7);
-    border: 1px solid white;
-
-}
 /*CAPERUCITA CAMINA TIPICA ESCENA*/
 @keyframes caminaCaperucita{
     0%{
@@ -310,6 +313,14 @@ a[ href="#pag-4-1"]:hover{
 
 /*ESTILOS 4-1 YENNY Y LUZ*/
 #pag-4-1{background-color:#252555;}
+#pag-4-1:target #one{
+    opacity: 0;
+    animation: opacidad 1s linear 8s 1 normal forwards;
+}
+#pag-4-1:target #two{
+    opacity: 0;
+    animation: opacidad 1s linear 10s 1 normal forwards;
+}
 #pag-4-1:target img[alt="arbusto2"]{
     position: absolute;
     top: 490px;
