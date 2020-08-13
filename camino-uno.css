@@ -265,24 +265,55 @@
         transform: translateX(0);
         background-image: url("img/caminata1.png");
     }
-    25%{
+    10%{
         transform: translateX(50px);
         background-image: url("img/caminata3.png");   
     }
-    50%{
+    20%{
         transform: translate(100px);
         background-image: url("img/caminata1.png");
     }
-    75%{
+    30%{
         transform: translateX(150px);
         background-image: url("img/caminata3.png");   
     }
-    100%{
+    40%{
         transform: translate(150px);
         background-image: url("img/caperucita-sorprendida.png");
     }
+
+    50%{
+        transform: translate(150px);
+        background-image: url("img/caperucita-asustada.png");
+    }
+    60%{
+        transform: translate(150px);
+        background-image: url("img/caperucita-asustada.png");
+    }
+
+    70%{
+        transform: translate(130px);
+        background-image: url("img/caminataotrolado2.png");
+    }
+    80%{
+        transform: translate(100px);
+        background-image: url("img/caminataotrolado.png");
+    }
+    90%{
+        transform: translate(70px);
+        background-image: url("img/caminataotrolado2.png");
+    }
+    98%{
+        transform: translate(40px);
+        background-image: url("img/caminataotrolado.png");   
+    }
+
+    100%{
+        transform: translate(10px);
+        background-image: url("img/caperucita-asustada.png");
+    }
 }
-#pag-3-1:target .cap-3-1{animation: caminaCaperucita 6s linear 3s 1 normal forwards;}
+#pag-3-1:target .cap-3-1{animation: caminaCaperucita 30s linear 3s 1 normal forwards;}
 #pag-4-2:target .cap-3-1{animation: opacidad 1s, caminaCaperucita 6s linear 3s 1 normal forwards;}
 #pag-3-1:target #loboAbu{
     position: absolute;
@@ -311,48 +342,6 @@
 
 }
 
-/*ESTILOS 4-1 YENNY Y LUZ*/
-#pag-4-1{background-color:#252555;}
-#pag-4-1:target #one{
-    opacity: 0;
-    animation: opacidad 1s linear 8s 1 normal forwards;
-}
-#pag-4-1:target #two{
-    opacity: 0;
-    animation: opacidad 1s linear 10s 1 normal forwards;
-}
-#pag-4-1:target img[alt="arbusto2"]{
-    position: absolute;
-    top: 490px;
-    left: 0px;
-    width: 1170px;
-    height: 100px;
-    z-index: 2;
-    opacity: 0;
-    animation: opacidad 1s linear 1s 1 normal forwards;
-}
-
-#pag-4-2:target img[alt="arbusto2"]{
-    position: absolute;
-    top: 490px;
-    left: 0px;
-    width: 1170px;
-    height: 100px;
-    z-index: 2;
-    opacity: 0;
-    animation: opacidad 1s linear 1s 1 normal forwards;
-}
-#pag-3-1:target img[alt="arbusto2"]{
-    position: absolute;
-    top: 490px;
-    left: 0px;
-    width: 1170px;
-    height: 100px;
-    z-index: 2;
-    opacity: 0;
-    animation: opacidad 1s linear 1s 1 normal forwards;
-}
-
 img[alt="nube1"]{
     position: absolute;
     top: 0px;
@@ -368,24 +357,13 @@ img[alt="luna"]{
     height: 100px;
 
 }
-
-
-#pag-4-1:target img[alt="cabaña1"]{
+#pag-3-1:target img[alt="arbusto2"]{
     position: absolute;
-    width: 900px;
-    height:450px;
-    top: 100px;
-    left: 140px;
-    opacity: 0;
-    animation: opacidad 1s linear 1s 1 normal forwards;
-}
-
-#pag-4-2:target img[alt="cabaña1"]{
-    position: absolute;
-    width: 900px;
-    height:450px;
-    top: 100px;
-    left: 140px;
+    top: 490px;
+    left: 0px;
+    width: 1170px;
+    height: 100px;
+    z-index: 2;
     opacity: 0;
     animation: opacidad 1s linear 1s 1 normal forwards;
 }
@@ -398,72 +376,94 @@ img[alt="luna"]{
     opacity: 0;
     animation: opacidad 1s linear 1s 1 normal forwards;
 }
-#pag-4-1:target img[alt="cap-asus"]{
-    position: absolute; 
-    width: 100px;
-    height: 160px;
-    top: 330px;
-    left:400px;
+
+/*ESTILOS 4-1 YENNY Y LUZ*/
+#pag-4-1{background-color:#252555;}
+#pag-4-1:target #one{
+    opacity: 0;
+    animation: opacidad 1s linear 8s 1 normal forwards;
+}
+#pag-4-1:target #two{
+    opacity: 0;
+    animation: opacidad 1s linear 10s 1 normal forwards;
+}
+#pag-4-1:target #casa-4-1{
+    position: absolute;
+    left: 350px;
+    bottom: 150px;
+    width: 700px;
+    height: 350px;
     opacity: 0;
     animation: opacidad 1s linear 1s 1 normal forwards;
 }
-#cama{
+#pag-4-1:target #puerta-4-1{
     position: absolute;
+    right: 593px;
+    bottom: 202px;
+    width: 50px;
+    height: 95px;
+    opacity: 0;
+    transform: rotateY(-30deg);
+    transform-origin: left;
+    animation: opacidad 1s linear 1s 1 normal forwards;
     z-index: 2;
-    top: 250px;
-    left:590px;
-    width: 280px;
-    height: 240px;
-    background-size: cover;
 }
-@keyframes cama{
+#puerta-4-1:hover{
+    transform: rotateY(-50deg);
+    transform-origin: left;
+}
+
+#pag-4-1:target #camino-4-1{
+    position: absolute;
+    left: 50px;
+    top: 330px;
+    bottom: 0;
+    width: 600px;
+    height: 200px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+    z-index: 1;
+}
+#grito-4-1{
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    top: 190px;
+    left:500px;
+    background-size: contain;
+    z-index: 1;
+}
+@keyframes gritofinal{
     0%{
-        background-image: url("img/lobo_abuela.png");
+        transform: scaleX(1.5);
+        background-image: url("img/grito1.png");
     }
     25%{
-        background-image: url("img/lobo_abuela.png");   
+        transform: scaleX(2.2) rotate(30deg);
+        background-image: url("img/grito1.png");
     }
     50%{
-        background-image: url("img/camaabuela.png");
+        transform: scaleX(3);
+        background-image: url("img/grito1.png");
+    }
+    75%{
+        transform: scaleX(2.2) rotate(-15deg);
+        background-image: url("img/grito1.png");
+    }
+    100%{
+        transform: scaleX(1.5);
+        background-image: url("img/grito1.png");
+        opacity: 0;
     }
 }
-#pag-4-1:target .cama-abuela{animation: cama 10s linear 5s 1 normal forwards;}
-img[alt="cama2"]{
-    position: absolute;
-    z-index: 2;
-    top:250px;
-    left:598px;
-    width: 305px;
-    height: 265px;
-    opacity: 0;
-    animation: opacidad 1s linear 10s 1 normal forwards;
-
+#pag-4-1:target .grito-4{
+    animation: gritofinal 2s linear 5s 3 normal forwards ;
+    transform-origin: right;
+    animation-iteration-count: infinite;
 }
 
-#pag-4-1:target .lobo-ataca{
-    position: absolute;
-    top: 330px;
-    left:0px;
-    width: 250px;
-    height: 170px;
-    background-size: cover;
-    opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
-}
 
- #caperucita-asustada{
-    position: absolute;
-    top: 330px;
-    left:380px;
-    width: 250px;
-    height: 170px;
-    z-index: 1;
-    background-size: cover;
-    opacity: 0;
-  
-}
-#caperucita-asustada{animation: caminaCaperucita 6s linear 1s 1 normal forwards;}
-/* cada animacion de pagina separenlo con un titulo */
+
 
 
 
