@@ -526,7 +526,7 @@ z-index:8;
     position: absolute;
     width: 1200px;
     height: 40px;
-    bottom: -45px;
+    bottom: -100px;
     z-index:7;
     animation-name: opacidad 1s linear 5s 1 normal forwards;
 }
