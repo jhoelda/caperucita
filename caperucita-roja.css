@@ -251,6 +251,7 @@ section>a{
     width: 100vw;
     display: flex;
     justify-content: space-between;
+    z-index: 3;
 }
 .nav>a{
     width: 10em;

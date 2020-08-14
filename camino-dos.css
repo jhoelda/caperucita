@@ -1,9 +1,20 @@
 /* ESTILOS ESCENAS MAGA Y JHOELDA */
 /* cada animacion de pagina separenlo con un titulo */
+
+#pag-3-2{
+background-color: #FFC96C ;
+}
+#pag-4-2, #pag-5-1, #pag-5-2{
+background-color:#252555;
+}
+@keyframes opacidad{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
 /* pag-2-2 se encuentra con el lobo y eleccion camino corto o camino largo */
-/* #animacion-2-2{
-    perspective: 500px;
-} */
+
 #pag-2-2:target #cam-amarillo2{
     position: absolute;
     z-index: 1;
@@ -51,10 +62,7 @@
     opacity: 0;
     animation: opacidad 1s linear 1s 1 normal forwards;
 }
-@keyframes opacidad{
-    from{opacity: 0;}
-    to{opacity: 1;}
-}
+
 #cap-2-2{
     position: absolute;
     z-index: 2;
@@ -122,14 +130,6 @@
         background-image: url("img/lobo2.png");
     }
 }
-/* @keyframes loboHabla{
-    from{
-        background-image: url("img/lobo1.png");
-    }
-    to{
-        background-image: url("img/lobo2.png");
-    }
-} */
 #pag-2-2:target .lobo-2-2{
     animation: loboAparece1 5s linear 1s 1 normal forwards;
 }
@@ -414,10 +414,39 @@
     }
 }
 #pag-5-2:target .grito1-5-2{
-    animation: grito 2s linear 5s 3 normal forwards;
+    animation: grito 2s linear 4s 3 normal forwards;
     transform-origin: right;
 }
-#leñador-5-1, #cap-5-1, #abuela-5-1{
+/* pagina 5-1  */
+#pag-5-1:target img[alt="cabaña1"]{
+    position: absolute;
+    width: 900px;
+    height:450px;
+    top: 100px;
+    left: 140px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+#pag-5-1:target img[alt="placar"]{
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    top: 270px;
+    left: 430px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;  
+}
+#pag-5-1:target img[alt="arbusto2"]{
+    position: absolute;
+    top: 490px;
+    left: 0px;
+    width: 1170px;
+    height: 100px;
+    z-index: 2;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+#leñador-5-1, .cap-5-1, #abuela-5-1{
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
@@ -431,10 +460,10 @@
     left: 300px;
     transform-origin: bottom;
 }
-#cap-5-1{
+.cap-5-1{
     /* background-image: url("img/caperucita.png"); */
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     width: 150px;
     height: 150px;
     bottom: 70px;
@@ -446,7 +475,7 @@
     z-index: 2;
     width: 300px;
     height: 200px;
-    bottom: 70px;
+    bottom: 80px;
     left: 400px;
 }
 #pag-5-1:target #loboCama{
@@ -459,7 +488,7 @@
     background-size: cover;
     background-image: url("img/loboDormido.png");
     opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
+    animation: opacidad 1s linear 1s 1 normal forwards;
 }
 @keyframes leñadorCasa{
     0%{
@@ -507,16 +536,21 @@
     }
 }
 #pag-5-1:target .leñador-5-1{
-    animation: leñadorCasa 25s linear 5s 1 normal forwards;
+    animation: leñadorCasa 25s linear 1s 1 normal forwards;
 }
 @keyframes abuelaSale{
     0%{
+        transform: translate(300px, -100px) rotate(-10deg);
         background-image: url("img/abuela1.png");
     }
-    30%{
+    25%{
+        transform: translate(150px, 0);
+        background-image: url("img/abuela1.png");
+    }
+    50%{
         background-image: url("img/abuela2.png")
     }
-    70%{
+    75%{
         background-image: url("img/abuela5.png")
     }
     100%{
@@ -524,19 +558,77 @@
     }
 }
 #pag-5-1:target .abuela-5-1{
-    animation: abuelaSale 15s linear 14s 1 normal forwards;
+    animation: abuelaSale 10s linear 10s 1 normal forwards;
 }
 @keyframes capSale{
     0%{
+        transform: translate(400px, -100px) rotate(-10deg);
         background-image: url("img/caperucita-sorprendida.png");
+    }
+    20%{
+        transform: translate(250px, 0);
+        background-image: url("img/caperucita-sorprendida.png");
+    }
+    40%{
+        background-image: url("img/caperucita-asustada.png")
+    }
+    75%{
+        background-image: url("img/caperucita2.png")
     }
     100%{
         background-image: url("img/caperucita.png");
     }
 }
-#pag-5-1:target.cap-5-1{
-    animation: capSale 5s linear 19s 1 normal forwards;
+#pag-5-1:target .cap-5-1{
+    animation: capSale 10s linear 16s 1 normal forwards;
 }
+#pag-5-1:target .censura{
+    position: absolute;
+    z-index: 3; 
+    width: 150px;
+    height: 100px;
+    top: 325px;
+    left:750px;
+    background: rgba(0, 0, 0, 0.79);
+    opacity: 0;
+    animation: opacidad 1s linear 6s 1 normal forwards;
+}
+.censura>img{
+    position: absolute;
+    z-index: 2; 
+    width: 100px;
+    height: 100px;
+    opacity: 0.6;
+}
+@keyframes fantasma{
+    0%{
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-300px);
+        opacity: .7;
+    }
+    100%{
+        transform: translateY(-450px);
+        opacity: 0;
+    }
+}
+#pag-5-1:target .loboMuerto{
+    position: absolute;
+    z-index: 1; 
+    width: 160px;
+    height: 250px;
+    top: 300px;
+    left:700px;
+    background-image: url("img/loboMuerto.png") ;
+    background-size: contain;
+    opacity: 0;
+    animation: fantasma 5s linear 20s 1 normal forwards;
+}
+
+
+
 /*pag 4-2*/
 #pag-4-2:target img[alt="orejaslobo"]{
     position: absolute;
@@ -596,9 +688,6 @@
 
 }
 
-#pag-4-2{
-    background-color: #252555;
-}
 
 
 
