@@ -1,4 +1,4 @@
-/* ESTILOS ESCENAS MAGA Y JHOELDA */
+ ESTILOS ESCENAS MAGA Y JHOELDA */
 /* cada animacion de pagina separenlo con un titulo */
 
 #pag-3-2{
@@ -802,7 +802,6 @@ background-color:#252555;
     animation: opacidad 1s linear 22s 1 normal forwards
 }
 
-<<<<<<< HEAD
 @keyframes cama1{
     0%{
         background-image:url("img/loboDormido.png"); 
@@ -813,22 +812,6 @@ background-color:#252555;
     100%{
     background-image: url("img/camaabuela.png");
     }
-}
-=======
->>>>>>> bb23e088cdbab846e3acc34b75a86373c2c3a602
-
-#pag-4-2:target #loboAbu-4-2{
-    position: absolute;
-    z-index: 2; 
-    width: 250px;
-    height: 220px;
-    top: 270px;
-    left:650px;
-    background-size: cover;
-    background-image: url("img/loboDormido.png");
-    opacity: 0;
-    animation: opacidad 1s linear 3s 1 normal forwards;
-
 }
 #pag-4-2:target img[alt="arbusto2"]{
     position: absolute;
@@ -887,4 +870,4 @@ background-color:#252555;
     animation: loboAtaca 5s linear 23s 1 normal forwards;
 }
 
-/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- 

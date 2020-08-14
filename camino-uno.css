@@ -48,7 +48,7 @@
     }
 }
 #pag-1-2:target .cap-1-2{
-    animation: caminata 7s linear 5s 1 normal forwards;
+    animation: caminata 7s linear 4s 1 normal forwards;
 }
 
 
@@ -360,22 +360,6 @@
     background-image: url("img/camaabuela.png");
     }
 }
-
-#pag-4-2:target #loboAbu{
-    position: absolute;
-    z-index: 2; 
-    width: 250px;
-    height: 220px;
-    top: 270px;
-    left:650px;
-    background-size: cover;
-    background-image: url("img/loboDormido.png");
-    opacity: 0;
-    animation: opacidad 1s linear 3s 1 normal forwards;
-
-}
-
-
 
 img[alt="nube1"]{
     position: absolute;

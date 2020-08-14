@@ -21,14 +21,9 @@ article{
     width: 100vw;
     height: 100vh;
     perspective: 1000px;
-/*<<<<<<< HEAD*/
-/*<<<<<<< HEAD*/
     background-image: url(img/fondo.jpg);
-/*=======*/
     background-color: #D0F9F2 ;
-/*=======*/
     background-color:#C3FFF7 ;
-/*>>>>>>> 3ae112ebc4079fcddc1030183d7f1ea23b4cdb6b*/
     background-image: url("img/fondo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,8 +133,7 @@ li>span{
     text-decoration: none;
 }
 .pagina>a:hover{
-    background-color: yellow;
-    color: black;
+    background-color: #50940e;
 }
 section>a{
     background-color: #EB1200;
@@ -261,7 +255,8 @@ section>a{
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    background-color:#50940e;border:1px solid #3f7807;
+    background-color:#50940e;
+    border:1px solid #3f7807;
     color: white;
     text-transform: uppercase;
     font-family:Helvetica Neue, Arial, Helvetica, Verdana, sans-serif;

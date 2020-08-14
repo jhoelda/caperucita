@@ -573,27 +573,6 @@ z-index:8;
 
 
 
-#pag-4-3:target img[alt="cabaña1"]{
-    position: absolute;
-    width: 900px;
-    height:450px;
-    top: 100px;
-    left: 140px;
-    opacity: 0;
-    animation: opacidad 1s linear 1s 1 normal forwards;
-}
-
-#pag-4-3:target img[alt="arbusto2"]{
-    position: absolute;
-    top: 490px;
-    left: 0px;
-    width: 1170px;
-    height: 100px;
-    z-index: 2;
-    opacity: 0;
-    animation: opacidad 1s linear 1s 1 normal forwards;
-}
-
 #pag-4-3:target img[alt="orejaslobo"]{
     position: absolute;
     z-index: 2; 
@@ -603,8 +582,10 @@ z-index:8;
     left:685px;
     opacity: 0;
     transform: scale(1.2);
-    animation: opacidad 1s linear 6s 1 normal ;
+    animation: opacidad 1s linear 12s 1 normal ;
+    animation-iteration-count: 2;
 }
+
 #pag-4-3:target img[alt="ojoslobo"]{
     position: absolute;
     z-index: 2;  
@@ -613,8 +594,10 @@ z-index:8;
     top: 292px;
     left:706px;
     opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;  
+    animation: opacidad 1s linear 8s 1 normal forwards;  
 }
+
+
 #pag-4-3:target .ojos-grandes{
     position: absolute;
     z-index: 2;  
@@ -623,8 +606,19 @@ z-index:8;
     top: 292px;
     left:706px;
     opacity: 0;
-    transform: scale(1.3);
-    animation: opacidad 1s linear 8s 1 normal ;  
+    transform: scale(1.5);
+    animation: opacidad 1s linear 16s 2 normal ;  
+    animation-iteration-count: 2;
+}
+
+#cap-4-3{
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    height: 160px;
+    top: 320px;
+    left: 400px;
+    background-size: cover;
 }
 #pag-4-3:target img[alt="placar"]{
     height: 150px;
@@ -637,55 +631,20 @@ z-index:8;
 
 }
 
-#pag-4-3:target #cama4-3{
-    position: absolute; 
-    width: 250px;
-    height: 170px;
-    top: 300px;
-    left:650px;
-    z-index: 0;
-    opacity: 0;
-    animation: opacidad 1s linear 5s 1 normal forwards;
-    
-}
-
-
-#pag-4-3:target .lobo4-3{
-    position: absolute;
-    width: 250px;
-    height: 220px;
-    top: 268px;
-    left: 650px;
-    z-index:1;
-    animation-name: camaseva;
-    animation-duration: 20s;
-    animation-fill-mode:both;
-}
-@keyframes camaseva{
-    0%{
-        opacity:0;
-    }
-    50%{
-        opacity:1;
-
-    }
-
-    100%{
-        opacity:0;
-    }
-    
-}
-#cap-4-3{
-    position: absolute;
-    z-index: 2;
+#pag-4-3:target img[alt="placar"]{
+    height: 150px;
     width: 100px;
-    height: 160px;
-    top: 320px;
-    left: 400px;
-    background-size: cover;
+    position: absolute;
+    top: 270px;
+    left: 430px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;  
+
 }
-@keyframes caminaCaperucita2{
-    0%{
+
+/*CAPERUCITA CAMINA TIPICA ESCENA*/
+@keyframes caminaCaperucita{
+     0%{
         transform: translateX(0);
         background-image: url("img/caminata1.png");
     }
@@ -699,40 +658,138 @@ z-index:8;
         
     }
     37.5%{
-        transform: translateX(150);
+        transform: translateX(150px);
         background-image: url("img/caminata3.png");  
 
     }
     50%{
-        transform: translateX(200);
+        transform: translateX(200px);
         background-image: url("img/caperucita-sorprendida.png");
     }
-    62.5%{
-        transform: translateX(150px);
-        background-image: url("img/caminataotrolado.png");   
+    60%{
+        transform: translateX(200px);
+
+        background-image: url("img/caperucita-sorprendida.png");
     }
-    75%{
-        transform: translate(100px);
+
+    70%{
+        transform: translateX(200px);
+
+        background-image: url("img/caperucita-asustada.png");
+    }
+    80%{
+        transform: translate(150px);
+        background-image: url("img/caminataotrolado.png");
+    }
+
+    90%{
+        transform: translate(50px);
         background-image: url("img/caminataotrolado2.png");
     }
-    100%{
+    98%{
         transform: translate(0px);
         background-image: url("img/caminataotrolado.png");
     }
+
+    100%{
+        background-image: url("img/caperucita-asustada.png");
+    }
 }
-#pag-4-3:target .cap-4-3{animation: caminaCaperucita2 6s linear 5s 1 normal forwards;}
+#pag-4-3:target .cap-4-3{animation: caminaCaperucita 25s linear 3s 1 normal forwards;}
 
-
-#pag-4-3:target .loboenojado2{
-    bottom:2px;
+#pag-4-3:target #loboAbu{
     position: absolute;
-    left: 500px;
-    height: 295px;
-    width: 210px;
-    background: url(img/loboenojado.png);
-    animation: opacidad 50s, caminata2 .8s steps(5) infinite;
-    z-index: 1;
-    top: 250px;
+    z-index: 2; 
+    width: 250px;
+    height: 220px;
+    top: 270px;
+    left:650px;
+    background-size: cover;
+    opacity: 0;
+    animation: opacidad 1s linear 3s 1 normal forwards, cama 40s;
+}
+#pag-4-3:target #cama43{
+    position: absolute;
+    z-index: 2; 
+    width: 250px;
+    height: 220px;
+    top: 270px;
+    left:650px;
+    background-image: url("img/camaabuela.png");
+    background-size: cover;
+    opacity: 0;
+    z-index: 3;
+    animation: opacidad 1s linear 22s 1 normal forwards
+}
+
+@keyframes cama43{
+    0%{
+        background-image:url("img/loboDormido.png"); 
+    }
+    50%{
+        background-image:url("img/loboDormido.png"); 
+
+    }
+
+    100%{
+    background-image: url("img/camaabuela.png");
+    }
+}
+#pag-4-3:target img[alt="arbusto2"]{
+    position: absolute;
+    top: 490px;
+    left: 0px;
+    width: 1170px;
+    height: 100px;
+    z-index: 2;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+#pag-4-3:target img[alt="cabaña1"]{
+    position: absolute;
+    width: 900px;
+    height:450px;
+    top: 100px;
+    left: 140px;
+    opacity: 0;
+    animation: opacidad 1s linear 1s 1 normal forwards;
+}
+#lob_4_3{
+    position: absolute;
+    z-index: 2;
+    width: 200px;
+    height: 300px;
+    top:180px;
+    left: 500;
+    background-size: cover;
+}
+@keyframes loboAtaca{
+    0%{
+        transform: translateX(520px);
+        background-image: url("img/lobo2.png");
+    }
+    25%{
+        transform: translateX(510px);
+        background-image: url("img/loboB.png");
+    }
+    50%{
+        transform: translateX(500px);
+        background-image: url("img/loboA.png");
+    }
+    75%{
+        transform: translateX(490px) ;
+        background-image: url("img/loboB.png");
+    }
+    90%{
+        background-image: url("img/loboA.png");
+    }
+    100%{
+        transform: translateX(480px);
+        background-image: url("img/loboA.png");
+    }
+}
+#pag-4-3:target .lob-4-3{
+    animation: loboAtaca 5s linear 23s 1 normal forwards;
 }
 
 /*pag 5-3 lobo escapa */
