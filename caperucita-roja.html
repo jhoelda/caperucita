@@ -13,10 +13,7 @@
     <title>Caperucita Roja</title>
 </head>
 <body scroll="no" style="overflow: hidden">
-    <!-- scroll="no" style="overflow: hidden" -dentro del body para cambiar pag con botones--->
     <main>
-        <!-- aqui la grilla...cada article ocupa un espacio-->
-        <!-- titulo del libro -->
         <article id="pag-1-1">
             <div class="cont">
                 <div class="libro">
@@ -234,14 +231,19 @@
 
         <article id="pag-3-1">
             <div class="tit-libro">
-                <ul>
-                    <li id="uno">-<span>O</span>h abuelita ¿Te sientes bien?</li>
-                    <li id="dos">-Claro que si Caperucita</li>
-                    <li id="tres">-Pero, que orejas tan grandes tienes</li>
-                    <li id="cuatro">-Son para escucharte mejor</li>
-                    <li id="cinco">-¿Y tus ojos? que ojos tan grandes tienes</li>
-                    <li id="seis">-Son para verte mejor...</li>
-                </ul>
+                <p>
+                <ul class="p43" style="  font-size: 25px; z-index: 2; color:black; background-color: rgba(226, 225, 224,0.2); border-radius: 20px;">
+                    <li class="uno">-<span>O</span>h abuelita ¿Te sientes bien?</li>
+                    <li class="dos">-Claro que si Caperucita</li>
+                    <li class="tres">-Pero, que orejas tan grandes tienes</li>
+                    <li class="cuatro">-Son para escucharte mejor</li>
+                    <li class="cinco">-¿Y tus ojos? que ojos tan grandes tienes</li>
+                    <li class="seis">-Son para verte mejor</li>
+                    <li class="siete">-Abuelita pero que dietes tan grandes tienes</li>
+                    <li class="ocho">-¡SON PARA COMERTE MEJOR!</li>
+                </ul>    
+                </p>
+                
             </div>
             <div class="tam-libro" >
                 <div class="cuadrado-cont3 cuadrado-cont"></div>
@@ -256,13 +258,14 @@
                 <img  src="img/arbusto2.png" alt="arbusto2">
                 <img  src="img/interior-casa-abuela.png" alt="cabaña1">
                 <img  src="img/placar.png" alt="placar">
+                <img  src="img/luna.png" alt="luna">
                 <div  id="loboAbu"></div>
+                <div id="cap-3-1" class="cap-3-1"></div>
                 <img  src="img/ojoslobo.png" alt="ojoslobo">
+                <div id="cama31"></div>
                 <img  src="img/ojoslobo.png" alt="ojoslobo2" class="ojos-grandes">
                 <img  src="img/orejaslobo.png" alt="orejaslobo">
-                <img  src="img/luna.png" alt="luna">
-                <div id="cap-3-1" class="cap-3-1"></div>
-
+                <div class="lob-3-1" id="lob_3_1"></div>
 
              </div>
             </div>
@@ -330,10 +333,10 @@
 
         <article id="pag-4-1">
             <div class="tit-libro">
-                <ul>
-                   <li id="one">-<span>A</span>buelita pero que grandes dientes tienes</li> 
-                   <li id="two">-¡SON PARA COMERTE MEJOR!</li> 
-                </ul>
+
+                <p style="font-size: 90px;color: #D01A0B ;">
+                    FIN
+                </p>
             </div>
             <!-- parte del libro - no se modifica -->
             <div class="tam-libro" >
@@ -344,15 +347,10 @@
                 <div class="cuadrado1 cuadrado"></div>
             </div>
             <div class="imagenes">
-                    <img  src="img/nubes11.png" alt="nube1">
-                    <img  src="img/arbusto2.png" alt="arbusto2">
-                    <img  src="img/interior-casa-abuela.png" alt="cabaña1">
-                    <img  src="img/placar.png" alt="placar">
-                    <div class="lobo-ataca"></div>
-                    <div id="caperucita-asustada"></div>
-                    <div class="cama-abuela" id="cama"></div>
-                    <img  src="img/luna.png" alt="luna">
-                    <img  src="img/camaabuela.png" alt="cama2">
+                <div id="grito-4-1" class="grito-4"></div>
+                <img src="img/puertaCasa.png" alt="puertaAbierta" id="puerta-4-1">
+                <a href="#pag-4-1"><img src="img/casaLarga2.png" alt="casa" id="casa-4-1"></a>
+                <img src="img/cam-amarillo.png" alt="caminoAmarrillo" id="camino-4-1">
 
              </div>
             <div class="nav">
@@ -364,7 +362,18 @@
 
         <article id="pag-4-2">
             <div class="tit-libro">
-                <p>explicacion de la historia</p>
+                <p>
+                     <ul class="p43" style="  font-size: 25px; z-index: 2; color:black; background-color: rgba(226, 225, 224,0.2); border-radius: 20px;">
+                    <li class="uno">-<span>O</span>h abuelita ¿Te sientes bien?</li>
+                    <li class="dos">-Claro que si Caperucita</li>
+                    <li class="tres">-Pero, que orejas tan grandes tienes</li>
+                    <li class="cuatro">-Son para escucharte mejor</li>
+                    <li class="cinco">-¿Y tus ojos? que ojos tan grandes tienes</li>
+                    <li class="seis">-Son para verte mejor</li>
+                    <li class="siete">-Abuelita pero que dietes tan grandes tienes</li>
+                    <li class="ocho">-¡SON PARA COMERTE MEJOR!</li>
+                </ul>
+                </p>
             </div>
             <!-- parte del libro - no se modifica -->
             <div class="tam-libro" >
@@ -374,21 +383,24 @@
                 <div class="cuadrado"></div>
                 <div class="cuadrado1 cuadrado"></div>
             </div>
-            <!-- ingreso de imganenes -->
+
             <div class="imagenes">
                 <img  src="img/nubes11.png" alt="nube1">
                 <img  src="img/arbusto2.png" alt="arbusto2">
                 <img  src="img/interior-casa-abuela.png" alt="cabaña1">
                 <img  src="img/placar.png" alt="placar">
-                <div  id="loboAbu"></div>
+                <img  src="img/luna.png" alt="luna">
+                <div  id="loboAbu-4-2"></div>
+                <div id="cap-4-2" class="cap-4-2"></div>
                 <img  src="img/ojoslobo.png" alt="ojoslobo">
+                <div id="cama42"></div>
                 <img  src="img/ojoslobo.png" alt="ojoslobo2" class="ojos-grandes">
                 <img  src="img/orejaslobo.png" alt="orejaslobo">
-                <img  src="img/luna.png" alt="luna">
-                <div id="cap-3-1" class="cap-3-1"></div> 
+                <div class="lob-4-2" id="lob_4_2"></div>
             </div>
-            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
+            
             <div class="nav">
+
                 <a href="#pag-3-2" class="pagAtras">Atras</a>
                 <a href="#pag-5-2" class="pagSiguiente">Siguiente</a>
             </div>
@@ -421,24 +433,20 @@
             </div>
             <!-- ingreso de imganenes -->
             <div class="imagenes">
+                <div class="imagenes">
                 <img  src="img/nubes11.png" alt="nube1">
                 <img  src="img/arbusto2.png" alt="arbusto2">
                 <img  src="img/interior-casa-abuela.png" alt="cabaña1">
                 <img  src="img/placar.png" alt="placar">
-                <div  id="loboCamaAbu">
-                    <img src="img/lobo_abuela.png" alt="lobo-abuela" class="lobo4-3">
-                </div>
+                <img  src="img/luna.png" alt="luna">
+                <div  id="loboAbu"></div>
+                <div id="cap-4-3" class="cap-4-3"></div>
+                <img  src="img/ojoslobo.png" alt="ojoslobo">
+                <div id="cama43"></div>
                 <img  src="img/ojoslobo.png" alt="ojoslobo2" class="ojos-grandes">
                 <img  src="img/orejaslobo.png" alt="orejaslobo">
-                <img  src="img/luna.png" alt="luna">
-                <div id="cap-4-3" class="cap-4-3"></div>
-                <img  src="img/camaabuela.png" alt="cama-abuela" id="cama4-3">
-                <div class="loboenojado2"></div> 
-                
-
-
+                <div class="lob-4-3" id="lob_4_3"></div>
                  </div>
-            <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
             <div class="nav">
                 <a href="#pag-3-3" class="pagAtras">Atras</a>
                 <a href="#pag-5-3" class="pagSiguiente">Siguiente</a>
@@ -447,7 +455,7 @@
 
         <article id="pag-5-1">
             <div class="tit-libro">
-                <p><span>A</span>l entrar se encuentra con el lobo ya dormido y con la panza bien hinchada. Al verlo asi, se imagino que es lo que pudo haber ocurrido. Entonces agarro su Acha y sin pensarlo corto la panza del lobo. Caperucita y la abuelita salen felices y aliviadas y le agradecen al cazador por haberlas salvado.</p>
+                <p><span>A</span>l entrar se encuentra con el lobo ya dormido y con la panza bien hinchada. Al verlo asi, se imagino que es lo que pudo haber ocurrido. Entonces agarro su hacha y sin pensarlo corto la panza del lobo. Caperucita y la abuelita salen felices y aliviadas, y le agradecen al cazador por haberlas salvado.</p>
             </div>
             <!-- parte del libro - no se modifica -->
             <div class="tam-libro" >
@@ -464,12 +472,14 @@
                 <img  src="img/loboDormido.png" alt="cama" id="loboCama">
                 <img  src="img/placar.png" alt="placar">
                 <div id="leñador-5-1" class="leñador-5-1"></div>
-                <div id="cap-5-1" class="cap-5-1"></div>
+                <div class="cap-5-1"></div>
                 <div id="abuela-5-1" class="abuela-5-1"></div>
+                <div class="censura"><img src="img/manchaSangre1.png" alt="sangre"></div>
+                <div class="loboMuerto"></div>
             </div>
             <!--boton para cambiar pagina si no hay opciones de camino...borrar si no hay nada-->
             <div class="nav">
-                <a href="pag-#5-2" class="pagAtras">Atras</a>
+                <a href="#pag-5-2" class="pagAtras">Atras</a>
                 <a href="#pag-1-1" class="pagAtras">Volver al inicio</a>
                 
             </div>
