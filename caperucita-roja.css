@@ -12,7 +12,6 @@ main{
     grid-template-columns:repeat(3,1fr);
     grid-template-rows:repeat(5,1fr);
 }
-/* article un componente de la grilla general */
 article{
     display: flex;
     flex-direction: column;
@@ -28,7 +27,6 @@ article{
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*ESTILO DE LOS PARRAFOS*/
 p{
     font-size: 35px; 
     list-style: none;
@@ -44,9 +42,6 @@ ul{
 li>span{
     font-size: 30px ; color: #D01A0B ;
 }
-/* estilos de la portada */
-
-
 .cont{
     width: 430px;
     height:640px;
@@ -145,9 +140,6 @@ section>a{
     position: absolute;
     top: 0;
 }
-
-
-/* titulo del libro - en la perte superior de la pag*/
 .tit-libro{
     display: flex;
     flex-direction: row;
@@ -157,7 +149,6 @@ section>a{
     width: 1100px;
     height: 35vh;
     border-radius: 10px;
-    /* border: 2px solid blue; */
     z-index: 3;
     font-family: 'Dancing Script', cursive;
     font-weight: bold; 
@@ -165,19 +156,13 @@ section>a{
     padding: 0 2em;
 
 }
-
-/* tamaño del libro en la grilla - al final borrar el border*/
 .tam-libro{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 900px;
     height: 300px;
-    /* border: 2px solid black; */
-    /* border-radius: 10px; */
 }
-
-/* ESTILOS DE LA PORTADA DEL LIBRO */
 .cuadrado-port{
     width: 50%;
     height: 500px;
@@ -186,8 +171,6 @@ section>a{
     border: 1px solid rgb(148, 33, 5);
     border-radius: 20px ;
 }
-
-/* ESTILOS DE inclinacion DEL LIBRO */
 .cuadrado-cont{
     position: absolute;
     width: 900px;
@@ -211,18 +194,14 @@ section>a{
 .inclinacion{
     transition: all 5s;
 }
-
-/* estilo del cuadrado q cambia de pagina */
 .cuadrado{
     width: 50%;
     height: 600px;
     background-image: linear-gradient(#1dc434f6 ,#aeca5f);
-    border: 1px solid blue;
+    border: 0.5px solid green;
     transform: rotatex(60deg);
     border-radius: 20px;
 }
-
-/* estilo cambiar pagina */
 @keyframes cuadrado1{
     from{
         transform: rotatex(60deg);
@@ -238,7 +217,6 @@ section>a{
     transform-origin: left;
 }  
 
-/* estilo boton pag siguiente y anterior*/
 .nav{
     position: absolute;
     top: 1em;
@@ -265,11 +243,8 @@ section>a{
     text-shadow:0 -3px 3px rgba(0,0,0,0.25)
 }
 
-/* estilo de imagenes */
-/* todas la imagenes ubicadas con posicion absoluto, es mas facil */
 .imagenes{
     position: absolute;
     width: 1200px;
     height: 80vh;
-    /* border: 2px solid yellow; */
 }
